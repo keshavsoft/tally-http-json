@@ -1,0 +1,49 @@
+{
+  "name": "tally-extract",
+  "version": "1.2.1",
+  "description": "Tally XML client based on structure spec",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "dispatchTally",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshavsoft/tally-extract.git"
+  },
+  "homepage": "https://github.com/keshavsoft/tally-extract#readme",
+  "bugs": {
+    "url": "https://github.com/keshavsoft/tally-extract/issues"
+  },
+  "keywords": [
+    "tally",
+    "tally-prime",
+    "tdl",
+    "xml",
+    "extract",
+    "accounting"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node test/v11/runAll.js"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "tally-spec": "^1.5.1"
+  }
+}
