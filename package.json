@@ -1,5 +1,5 @@
 {
-  "name": "tally-extract",
+  "name": "tally-http-json",
   "version": "1.2.1",
   "description": "Tally XML client based on structure spec",
   "type": "module",
@@ -21,11 +21,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keshavsoft/tally-extract.git"
+    "url": "git+https://github.com/keshavsoft/tally-http-json.git"
   },
-  "homepage": "https://github.com/keshavsoft/tally-extract#readme",
+  "homepage": "https://github.com/keshavsoft/tally-http-json#readme",
   "bugs": {
-    "url": "https://github.com/keshavsoft/tally-extract/issues"
+    "url": "https://github.com/keshavsoft/tally-http-json/issues"
   },
   "keywords": [
     "tally",
