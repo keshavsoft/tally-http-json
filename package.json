@@ -1,21 +1,15 @@
 {
   "name": "tally-http-json",
-  "version": "1.2.1",
-  "description": "Tally XML client based on structure spec",
+  "version": "1.2.2",
+  "description": "Tally HTTP JSON client for TallyPrime",
   "type": "module",
   "main": "./src/index.js",
-  "types": "./src/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./src/index.d.ts",
-      "import": "./src/index.js",
-      "default": "./src/index.js"
-    },
+    ".": "./src/index.js",
     "./package.json": "./package.json"
   },
   "files": [
     "src",
-    "dispatchTally",
     "README.md",
     "LICENSE"
   ],
@@ -30,17 +24,13 @@
   "keywords": [
     "tally",
     "tally-prime",
-    "tdl",
-    "xml",
-    "extract",
+    "http",
+    "json",
     "accounting"
   ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  },
-  "scripts": {
-    "test": "node test/v11/runAll.js"
   },
   "devDependencies": {},
   "dependencies": {
