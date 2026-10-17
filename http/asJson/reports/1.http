@@ -1,0 +1,65 @@
+
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: KSAllBatchBalances
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "Mani10"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSAllBatchBalances",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Collections": "KSBatchBalances"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSBatchBalances",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Batch"
+            },
+            {
+              "ChildOf": "Bb"
+            },
+            {
+              "Fetch": "Name"
+            },
+            {
+              "Fetch": "Parent"
+            },
+            {
+              "Fetch": "ClosingBalance"
+            },
+            {
+              "Fetch": "ClosingValue"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
