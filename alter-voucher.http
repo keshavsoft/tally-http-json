@@ -1,0 +1,33 @@
+
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Import
+type: Data
+id: Vouchers
+
+{
+  "static_variables": [
+    {
+      "name": "svVchImportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tallymessage": [
+    {
+      "metadata": {
+        "type": "Voucher",
+        "id": "181844",
+        "vchtype": "Receipt",
+        "action": "Alter",
+        "objview": "Accounting Voucher View"
+      },
+      "date": "20261017",
+      "narration": "Altered through JSON HTTP"
+    }
+  ]
+}
