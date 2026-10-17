@@ -1,0 +1,46 @@
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Import
+type: Data
+id: Vouchers
+
+{
+  "static_variables": [
+    {
+      "name": "svVchImportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tallymessage": [
+    {
+      "metadata": {
+        "type": "Voucher",
+        "vchtype": "Receipt",
+        "action": "Create",
+        "objview": "Accounting Voucher View"
+      },
+      "date": "20261017",
+      "vouchertypename": "Receipt",
+      "partyledgername": "KS JSON Test Ledger V2",
+      "ledgerentries": [
+        {
+          "ledgername": "Cash",
+          "isdeemedpositive": false,
+          "ispartyledger": false,
+          "amount": "100.00"
+        },
+        {
+          "ledgername": "KS JSON Test Ledger V2",
+          "isdeemedpositive": true,
+          "ispartyledger": true,
+          "amount": "-100.00"
+        }
+      ]
+    }
+  ]
+}
