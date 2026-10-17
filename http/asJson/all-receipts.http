@@ -1,0 +1,62 @@
+
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: KSAllReceipts
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSAllReceipts",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            },
+            {
+              "Fetch": "VoucherTypeName"
+            },
+            {
+              "Fetch": "PartyLedgerName"
+            },
+            {
+              "Fetch": "Narration"
+            },
+            {
+              "Fetch": "Amount"
+            },
+            {
+              "Fetch": "AllLedgerEntries.*"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

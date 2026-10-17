@@ -1,0 +1,69 @@
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: KSRecentReceipts
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    },
+    {
+      "name": "svFromDate",
+      "value": "20261016"
+    },
+    {
+      "name": "svToDate",
+      "value": "20261017"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSReceiptDateFilter",
+            "type": "System Formulae",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "KSReceiptDateFilter": "$Date >= ##SVFromDate AND $Date <= ##SVToDate"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSRecentReceipts",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Filter": "KSReceiptDateFilter"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
