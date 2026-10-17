@@ -1,0 +1,60 @@
+[
+    {
+        "definitions": [
+            {
+                "metadata": {
+                    "name": "KSAllBatchBalances",
+                    "type": "Collection",
+                    "ismodify": false
+                },
+                "attributes": [
+                    {
+                        "Collections": "KSBatchBalances:KSStockItems"
+                    }
+                ]
+            },
+            {
+                "metadata": {
+                    "name": "KSStockItems",
+                    "type": "Collection",
+                    "ismodify": false
+                },
+                "attributes": [
+                    {
+                        "Type": "StockItem"
+                    },
+                    {
+                        "Fetch": "Name"
+                    }
+                ]
+            },
+            {
+                "metadata": {
+                    "name": "KSBatchBalances",
+                    "type": "Collection",
+                    "ismodify": false
+                },
+                "attributes": [
+                    {
+                        "Type": "Batch"
+                    },
+                    {
+                        "ChildOf": "$$LoopCollObj:$Name"
+                    },
+                    {
+                        "Fetch": "Name"
+                    },
+                    {
+                        "Fetch": "Parent"
+                    },
+                    {
+                        "Fetch": "ClosingBalance"
+                    },
+                    {
+                        "Fetch": "GodownName"
+                    }
+                ]
+            }
+        ]
+    }
+]

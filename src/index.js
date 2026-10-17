@@ -1,1 +1,1 @@
-export { default, noCompany } from "./v2/index.js";
+export { default, noCompany, tdl } from "./v3/index.js";
