@@ -1,0 +1,9 @@
+[
+  "KSAllBatchBalances",
+  "KSAllReceipts",
+  "KSFormulaTest",
+  "KSReceiptDateTest",
+  "KSReceiptLedgerEntryProbe",
+  "KSReceiptLegacyJsonTest",
+  "KSRecentReceipts"
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "id": "KSNativeCompany",
+    "objectType": "Company",
+    "fetch": [
+      "Name"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeLedger",
+    "objectType": "Ledger",
+    "fetch": [
+      "Name",
+      "Parent",
+      "OpeningBalance"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeGroup",
+    "objectType": "Group",
+    "fetch": [
+      "Name",
+      "Parent"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeVoucher",
+    "objectType": "Voucher",
+    "fetch": [
+      "Date",
+      "VoucherNumber",
+      "VoucherTypeName",
+      "PartyLedgerName",
+      "Amount"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeVoucherType",
+    "objectType": "Voucher Type",
+    "fetch": [
+      "Name"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeStockItem",
+    "objectType": "Stock Item",
+    "fetch": [
+      "Name",
+      "Parent",
+      "BaseUnits",
+      "OpeningBalance"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeStockGroup",
+    "objectType": "Stock Group",
+    "fetch": [
+      "Name",
+      "Parent"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeStockCategory",
+    "objectType": "Stock Category",
+    "fetch": [
+      "Name",
+      "Parent"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeUnit",
+    "objectType": "Unit",
+    "fetch": [
+      "Name",
+      "FormalName",
+      "NumberOfDecimalPlaces"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeGodown",
+    "objectType": "Godown",
+    "fetch": [
+      "Name",
+      "Parent"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeCurrency",
+    "objectType": "Currency",
+    "fetch": [
+      "Name",
+      "FormalName"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeCostCentre",
+    "objectType": "Cost Centre",
+    "fetch": [
+      "Name",
+      "Category"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeCostCategory",
+    "objectType": "Cost Category",
+    "fetch": [
+      "Name"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "KSNativeBudget",
+    "objectType": "Budget",
+    "fetch": [
+      "Name"
+    ],
+    "status": "candidate"
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "id": "KSNativeCompany",
+    "objectType": "Company",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "metadata",
+      "name",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeLedger",
+    "objectType": "Ledger",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "languageid",
+      "languagename",
+      "metadata",
+      "mst_dep_type",
+      "name",
+      "openingbalance",
+      "parent",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeGroup",
+    "objectType": "Group",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "languageid",
+      "languagename",
+      "metadata",
+      "mst_dep_type",
+      "name",
+      "parent",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeVoucher",
+    "objectType": "Voucher",
+    "status": "success",
+    "keys": [
+      "accountingallocations",
+      "actualqty",
+      "addlamount",
+      "allinventoryentries",
+      "allledgerentries",
+      "amount",
+      "areserialmaster",
+      "asoriginal",
+      "aspayslip",
+      "batchallocations",
+      "batchdiscount",
+      "batchname",
+      "batchrate",
+      "billallocations",
+      "billedqty",
+      "billtype",
+      "cmp_dep_type",
+      "cmp_locus",
+      "collection",
+      "data",
+      "date",
+      "discount",
+      "effectivedate",
+      "guid",
+      "indentno",
+      "is_cmp_dep_type",
+      "isdeemedpositive",
+      "isdeleted",
+      "isdeletedvchretained",
+      "isinvoice",
+      "islastdeemedpositive",
+      "isnegisposset",
+      "ledgerentries",
+      "ledgername",
+      "masterid",
+      "metadata",
+      "numberingstyle",
+      "objview",
+      "orderno",
+      "partyledgername",
+      "persistedview",
+      "rate",
+      "reference",
+      "remoteid",
+      "reuseholeid",
+      "serialmaster",
+      "status",
+      "stockitemname",
+      "tdsdeducteeisspecialrate",
+      "tdsdeducteespecialrate",
+      "trackingnumber",
+      "type",
+      "value",
+      "vatassessablevalue",
+      "vchkey",
+      "vchtype",
+      "voucherkey",
+      "vouchernumber",
+      "vouchernumberseries",
+      "voucherretainkey",
+      "vouchertypename"
+    ]
+  },
+  {
+    "id": "KSNativeVoucherType",
+    "objectType": "Voucher Type",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "languageid",
+      "languagename",
+      "metadata",
+      "mst_dep_type",
+      "name",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeStockItem",
+    "objectType": "Stock Item",
+    "status": "success",
+    "keys": [
+      "baseunits",
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "languageid",
+      "languagename",
+      "metadata",
+      "mst_dep_type",
+      "name",
+      "openingbalance",
+      "parent",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeStockGroup",
+    "objectType": "Stock Group",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "languageid",
+      "languagename",
+      "metadata",
+      "mst_dep_type",
+      "name",
+      "parent",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeStockCategory",
+    "objectType": "Stock Category",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "metadata",
+      "mst_dep_type",
+      "status"
+    ]
+  },
+  {
+    "id": "KSNativeUnit",
+    "objectType": "Unit",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "mailingname",
+      "metadata",
+      "mst_dep_type",
+      "name",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeGodown",
+    "objectType": "Godown",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "languageid",
+      "languagename",
+      "metadata",
+      "mst_dep_type",
+      "name",
+      "parent",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeCurrency",
+    "objectType": "Currency",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "mailingname",
+      "metadata",
+      "mst_dep_type",
+      "name",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeCostCentre",
+    "objectType": "Cost Centre",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "metadata",
+      "mst_dep_type",
+      "status"
+    ]
+  },
+  {
+    "id": "KSNativeCostCategory",
+    "objectType": "Cost Category",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "languageid",
+      "languagename",
+      "metadata",
+      "mst_dep_type",
+      "name",
+      "reservedname",
+      "status",
+      "type",
+      "value"
+    ]
+  },
+  {
+    "id": "KSNativeBudget",
+    "objectType": "Budget",
+    "status": "success",
+    "keys": [
+      "collection",
+      "data",
+      "is_mst_dep_type",
+      "metadata",
+      "mst_dep_type",
+      "status"
+    ]
+  }
+]

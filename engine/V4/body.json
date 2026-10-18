@@ -1,0 +1,285 @@
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSFormulaTest",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Filter": "KSReceiptDateFilter"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSRecentReceipts",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Voucher"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            },
+            {
+              "Fetch": "MasterID"
+            },
+            {
+              "Fetch": "PartyLedgerName"
+            },
+            {
+              "Fetch": "Amount"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptDateTest",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSAllReceipts",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            },
+            {
+              "Fetch": "PartyLedgerName"
+            },
+            {
+              "Fetch": "Amount"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptLedgerEntryProbe",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Source Collection": "KSReceiptVoucherSource"
+            },
+            {
+              "Walk": "AllLedgerEntries"
+            },
+            {
+              "Source Fetch": "Date,VoucherNumber"
+            },
+            {
+              "Fetch": "LedgerName"
+            },
+            {
+              "Fetch": "Amount"
+            },
+            {
+              "Fetch": "IsDeemedPositive"
+            },
+            {
+              "Compute": "ParentVoucherNumber: $VoucherNumber"
+            },
+            {
+              "Compute": "ParentVoucherDate: $Date"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptVoucherSource",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptCollection",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            },
+            {
+              "Fetch": "PartyLedgerName"
+            },
+            {
+              "Fetch": "Amount"
+            },
+            {
+              "Fetch": "AllLedgerEntries"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptLegacyJsonTest",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            },
+            {
+              "Fetch": "PartyLedgerName"
+            },
+            {
+              "Fetch": "Amount"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSAllBatchBalances",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Collections": "KSBatchBalances"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSStockItems",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "StockItem"
+            },
+            {
+              "Fetch": "Name"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSBatchBalances",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Batch"
+            },
+            {
+              "ChildOf": "Viaadi Hooks"
+            },
+            {
+              "Fetch": "Name"
+            },
+            {
+              "Fetch": "Parent"
+            },
+            {
+              "Fetch": "ClosingBalance"
+            },
+            {
+              "Fetch": "ClosingValue"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

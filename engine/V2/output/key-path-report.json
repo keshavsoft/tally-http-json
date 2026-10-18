@@ -1,0 +1,3982 @@
+{
+  "generatedAt": "2026-10-18T15:53:41.640Z",
+  "sourceDirectory": "D:\\KeshavSoftRepos\\oct\\17\\tally-http-json\\engine\\V1\\output",
+  "filesScanned": 14,
+  "files": [
+    {
+      "file": "KSNativeBudget.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 7,
+      "arrayPaths": [
+        "$.data.collection"
+      ]
+    },
+    {
+      "file": "KSNativeCompany.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 13,
+      "arrayPaths": [
+        "$.data.collection"
+      ]
+    },
+    {
+      "file": "KSNativeCostCategory.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 21,
+      "arrayPaths": [
+        "$.data.collection",
+        "$.data.collection[*].languagename",
+        "$.data.collection[*].languagename[*].name"
+      ]
+    },
+    {
+      "file": "KSNativeCostCentre.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 7,
+      "arrayPaths": [
+        "$.data.collection"
+      ]
+    },
+    {
+      "file": "KSNativeCurrency.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 18,
+      "arrayPaths": [
+        "$.data.collection"
+      ]
+    },
+    {
+      "file": "KSNativeGodown.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 24,
+      "arrayPaths": [
+        "$.data.collection",
+        "$.data.collection[*].languagename",
+        "$.data.collection[*].languagename[*].name"
+      ]
+    },
+    {
+      "file": "KSNativeGroup.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 24,
+      "arrayPaths": [
+        "$.data.collection",
+        "$.data.collection[*].languagename",
+        "$.data.collection[*].languagename[*].name"
+      ]
+    },
+    {
+      "file": "KSNativeLedger.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 27,
+      "arrayPaths": [
+        "$.data.collection",
+        "$.data.collection[*].languagename",
+        "$.data.collection[*].languagename[*].name"
+      ]
+    },
+    {
+      "file": "KSNativeStockCategory.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 7,
+      "arrayPaths": [
+        "$.data.collection"
+      ]
+    },
+    {
+      "file": "KSNativeStockGroup.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 24,
+      "arrayPaths": [
+        "$.data.collection",
+        "$.data.collection[*].languagename",
+        "$.data.collection[*].languagename[*].name"
+      ]
+    },
+    {
+      "file": "KSNativeStockItem.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 30,
+      "arrayPaths": [
+        "$.data.collection",
+        "$.data.collection[*].languagename",
+        "$.data.collection[*].languagename[*].name"
+      ]
+    },
+    {
+      "file": "KSNativeUnit.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 18,
+      "arrayPaths": [
+        "$.data.collection"
+      ]
+    },
+    {
+      "file": "KSNativeVoucher.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 188,
+      "arrayPaths": [
+        "$.data.collection",
+        "$.data.collection[*].allinventoryentries",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations",
+        "$.data.collection[*].allinventoryentries[*].batchallocations",
+        "$.data.collection[*].allledgerentries",
+        "$.data.collection[*].allledgerentries[*].billallocations",
+        "$.data.collection[*].ledgerentries",
+        "$.data.collection[*].ledgerentries[*].billallocations"
+      ]
+    },
+    {
+      "file": "KSNativeVoucherType.json",
+      "status": "scanned",
+      "rootType": "object",
+      "discoveredPaths": 21,
+      "arrayPaths": [
+        "$.data.collection",
+        "$.data.collection[*].languagename",
+        "$.data.collection[*].languagename[*].name"
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "path": "$",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeBudget.json",
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCostCentre.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockCategory.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucher.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 14,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "data",
+        "status"
+      ]
+    },
+    {
+      "path": "$.data",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeBudget.json",
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCostCentre.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockCategory.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucher.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 14,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "collection",
+        "metadata"
+      ]
+    },
+    {
+      "path": "$.data.collection",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeBudget.json",
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCostCentre.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockCategory.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucher.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 14,
+      "arrayLengthMin": 0,
+      "arrayLengthMax": 7440,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*]",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucher.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 14340,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "allinventoryentries",
+        "allledgerentries",
+        "amount",
+        "areserialmaster",
+        "asoriginal",
+        "aspayslip",
+        "baseunits",
+        "date",
+        "effectivedate",
+        "guid",
+        "isdeemedpositive",
+        "isdeleted",
+        "isdeletedvchretained",
+        "isinvoice",
+        "isnegisposset",
+        "languagename",
+        "ledgerentries",
+        "mailingname",
+        "masterid",
+        "metadata",
+        "name",
+        "numberingstyle",
+        "openingbalance",
+        "parent",
+        "partyledgername",
+        "persistedview",
+        "reference",
+        "reuseholeid",
+        "serialmaster",
+        "voucherkey",
+        "vouchernumber",
+        "vouchernumberseries",
+        "voucherretainkey",
+        "vouchertypename"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3706,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 30,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*]",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "accountingallocations",
+        "actualqty",
+        "addlamount",
+        "amount",
+        "batchallocations",
+        "billedqty",
+        "discount",
+        "isdeemedpositive",
+        "islastdeemedpositive",
+        "rate",
+        "stockitemname"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 1,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*]",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "amount",
+        "isdeemedpositive",
+        "islastdeemedpositive",
+        "ledgername"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].actualqty",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].actualqty.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].actualqty.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].addlamount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].addlamount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].addlamount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].amount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].amount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].amount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 13,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*]",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "actualqty",
+        "addlamount",
+        "amount",
+        "batchdiscount",
+        "batchname",
+        "batchrate",
+        "billedqty",
+        "indentno",
+        "orderno",
+        "trackingnumber"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14760,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].billedqty",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].billedqty.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].billedqty.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].discount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].discount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].discount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].isdeemedpositive",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].isdeemedpositive.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].isdeemedpositive.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].islastdeemedpositive",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].islastdeemedpositive.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].islastdeemedpositive.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].rate",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].rate.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].rate.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].stockitemname",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].stockitemname.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].stockitemname.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3436,
+      "arrayLengthMin": 2,
+      "arrayLengthMax": 35,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*]",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "amount",
+        "billallocations",
+        "isdeemedpositive",
+        "islastdeemedpositive",
+        "ledgername",
+        "vatassessablevalue"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].amount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].amount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].amount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3688,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 14,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations[*]",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3928,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "amount",
+        "billtype",
+        "tdsdeducteeisspecialrate",
+        "tdsdeducteespecialrate"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations[*].amount",
+      "types": [
+        "object",
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3928,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations[*].amount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3844,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations[*].amount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3844,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations[*].billtype",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 84,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations[*].billtype.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 84,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations[*].billtype.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 84,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations[*].tdsdeducteeisspecialrate",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 84,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations[*].tdsdeducteespecialrate",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 84,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].isdeemedpositive",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].isdeemedpositive.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].isdeemedpositive.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].islastdeemedpositive",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].islastdeemedpositive.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].islastdeemedpositive.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].ledgername",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].ledgername.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].ledgername.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].vatassessablevalue",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].vatassessablevalue.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].vatassessablevalue.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 9279,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].amount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].amount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].amount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].areserialmaster",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].areserialmaster.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].areserialmaster.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].asoriginal",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].aspayslip",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].baseunits",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeStockItem.json"
+      ],
+      "occurrences": 1529,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].baseunits.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeStockItem.json"
+      ],
+      "occurrences": 1529,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].baseunits.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeStockItem.json"
+      ],
+      "occurrences": 1529,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].date",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].date.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].date.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].effectivedate",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 84,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].effectivedate.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 84,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].effectivedate.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 84,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].guid",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].isdeemedpositive",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].isdeemedpositive.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].isdeemedpositive.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].isdeleted",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].isdeletedvchretained",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].isinvoice",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].isnegisposset",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].isnegisposset.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].isnegisposset.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].languagename",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6894,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 1,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].languagename[*]",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6894,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "languageid",
+        "name"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].languagename[*].languageid",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6893,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].languagename[*].languageid.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6893,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].languagename[*].languageid.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6893,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].languagename[*].name",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6894,
+      "arrayLengthMin": 2,
+      "arrayLengthMax": 4,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].languagename[*].name[*]",
+      "types": [
+        "object",
+        "string"
+      ],
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 13833,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "metadata",
+        "type"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].languagename[*].name[*].metadata",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6894,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].languagename[*].name[*].type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6894,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3706,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 3,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*]",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "amount",
+        "billallocations",
+        "isdeemedpositive",
+        "islastdeemedpositive",
+        "ledgername"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].amount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].amount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].amount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].billallocations",
+      "types": [
+        "array"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 2027,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 9,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].billallocations[*]",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 2961,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "amount"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].billallocations[*].amount",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 2961,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].billallocations[*].amount.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 2961,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].billallocations[*].amount.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 2961,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].isdeemedpositive",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].isdeemedpositive.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].isdeemedpositive.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].islastdeemedpositive",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].islastdeemedpositive.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].islastdeemedpositive.value",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].ledgername",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].ledgername.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].ledgername.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 4793,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].mailingname",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeCurrency.json",
+        "KSNativeUnit.json"
+      ],
+      "occurrences": 5,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].mailingname.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCurrency.json",
+        "KSNativeUnit.json"
+      ],
+      "occurrences": 5,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].mailingname.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCurrency.json",
+        "KSNativeUnit.json"
+      ],
+      "occurrences": 5,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].masterid",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].masterid.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].masterid.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].metadata",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucher.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 14340,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "name",
+        "objview",
+        "remoteid",
+        "reservedname",
+        "type",
+        "vchkey",
+        "vchtype"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].metadata.name",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6900,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].metadata.objview",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].metadata.remoteid",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].metadata.reservedname",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6900,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].metadata.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucher.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 14340,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].metadata.vchkey",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].metadata.vchtype",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].name",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeCompany.json",
+        "KSNativeCurrency.json",
+        "KSNativeUnit.json"
+      ],
+      "occurrences": 6,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].name.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCompany.json",
+        "KSNativeCurrency.json",
+        "KSNativeUnit.json"
+      ],
+      "occurrences": 6,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].name.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeCompany.json",
+        "KSNativeCurrency.json",
+        "KSNativeUnit.json"
+      ],
+      "occurrences": 6,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].numberingstyle",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].openingbalance",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeLedger.json",
+        "KSNativeStockItem.json"
+      ],
+      "occurrences": 6566,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].openingbalance.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeLedger.json",
+        "KSNativeStockItem.json"
+      ],
+      "occurrences": 6566,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].openingbalance.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeLedger.json",
+        "KSNativeStockItem.json"
+      ],
+      "occurrences": 6566,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].parent",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json"
+      ],
+      "occurrences": 6854,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].parent.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json"
+      ],
+      "occurrences": 6854,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].parent.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json"
+      ],
+      "occurrences": 6854,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].partyledgername",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].partyledgername.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].partyledgername.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].persistedview",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].reference",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3706,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].reference.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3706,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].reference.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3706,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].reuseholeid",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].reuseholeid.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].reuseholeid.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].serialmaster",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].serialmaster.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].serialmaster.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].voucherkey",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].voucherkey.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].voucherkey.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].vouchernumber",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].vouchernumberseries",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].vouchernumberseries.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].vouchernumberseries.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].voucherretainkey",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "type",
+        "value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].voucherretainkey.type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].voucherretainkey.value",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.collection[*].vouchertypename",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 7440,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.metadata",
+      "types": [
+        "object"
+      ],
+      "files": [
+        "KSNativeBudget.json",
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCostCentre.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockCategory.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucher.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 14,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": [
+        "cmp_dep_type",
+        "cmp_locus",
+        "is_cmp_dep_type",
+        "is_mst_dep_type",
+        "mst_dep_type"
+      ]
+    },
+    {
+      "path": "$.data.metadata.cmp_dep_type",
+      "types": [
+        "number"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 1,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.metadata.cmp_locus",
+      "types": [
+        "number"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 1,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.metadata.is_cmp_dep_type",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 1,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.metadata.is_mst_dep_type",
+      "types": [
+        "boolean"
+      ],
+      "files": [
+        "KSNativeBudget.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCostCentre.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockCategory.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 12,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.data.metadata.mst_dep_type",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeBudget.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCostCentre.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockCategory.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 12,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    },
+    {
+      "path": "$.status",
+      "types": [
+        "string"
+      ],
+      "files": [
+        "KSNativeBudget.json",
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCostCentre.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockCategory.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucher.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 14,
+      "arrayLengthMin": null,
+      "arrayLengthMax": null,
+      "sampleKeys": []
+    }
+  ],
+  "arrayCandidates": [
+    {
+      "path": "$.data.collection",
+      "files": [
+        "KSNativeBudget.json",
+        "KSNativeCompany.json",
+        "KSNativeCostCategory.json",
+        "KSNativeCostCentre.json",
+        "KSNativeCurrency.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockCategory.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeUnit.json",
+        "KSNativeVoucher.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 14,
+      "arrayLengthMin": 0,
+      "arrayLengthMax": 7440,
+      "itemPaths": [
+        "$.data.collection[*]",
+        "$.data.collection[*].allinventoryentries",
+        "$.data.collection[*].allinventoryentries[*]",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*]",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount.value",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername.value",
+        "$.data.collection[*].allinventoryentries[*].actualqty",
+        "$.data.collection[*].allinventoryentries[*].actualqty.type",
+        "$.data.collection[*].allinventoryentries[*].actualqty.value",
+        "$.data.collection[*].allinventoryentries[*].addlamount",
+        "$.data.collection[*].allinventoryentries[*].addlamount.type",
+        "$.data.collection[*].allinventoryentries[*].addlamount.value",
+        "$.data.collection[*].allinventoryentries[*].amount",
+        "$.data.collection[*].allinventoryentries[*].amount.type",
+        "$.data.collection[*].allinventoryentries[*].amount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*]",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber.value",
+        "$.data.collection[*].allinventoryentries[*].billedqty",
+        "$.data.collection[*].allinventoryentries[*].billedqty.type",
+        "$.data.collection[*].allinventoryentries[*].billedqty.value",
+        "$.data.collection[*].allinventoryentries[*].discount",
+        "$.data.collection[*].allinventoryentries[*].discount.type",
+        "$.data.collection[*].allinventoryentries[*].discount.value",
+        "$.data.collection[*].allinventoryentries[*].isdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].isdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].isdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].islastdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].islastdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].islastdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].rate",
+        "$.data.collection[*].allinventoryentries[*].rate.type",
+        "$.data.collection[*].allinventoryentries[*].rate.value",
+        "$.data.collection[*].allinventoryentries[*].stockitemname",
+        "$.data.collection[*].allinventoryentries[*].stockitemname.type",
+        "$.data.collection[*].allinventoryentries[*].stockitemname.value",
+        "$.data.collection[*].allledgerentries",
+        "$.data.collection[*].allledgerentries[*]",
+        "$.data.collection[*].allledgerentries[*].amount",
+        "$.data.collection[*].allledgerentries[*].amount.type",
+        "$.data.collection[*].allledgerentries[*].amount.value",
+        "$.data.collection[*].allledgerentries[*].billallocations",
+        "$.data.collection[*].allledgerentries[*].billallocations[*]",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].amount",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].amount.type",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].amount.value",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].billtype",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].billtype.type",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].billtype.value",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].tdsdeducteeisspecialrate",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].tdsdeducteespecialrate",
+        "$.data.collection[*].allledgerentries[*].isdeemedpositive",
+        "$.data.collection[*].allledgerentries[*].isdeemedpositive.type",
+        "$.data.collection[*].allledgerentries[*].isdeemedpositive.value",
+        "$.data.collection[*].allledgerentries[*].islastdeemedpositive",
+        "$.data.collection[*].allledgerentries[*].islastdeemedpositive.type",
+        "$.data.collection[*].allledgerentries[*].islastdeemedpositive.value",
+        "$.data.collection[*].allledgerentries[*].ledgername",
+        "$.data.collection[*].allledgerentries[*].ledgername.type",
+        "$.data.collection[*].allledgerentries[*].ledgername.value",
+        "$.data.collection[*].allledgerentries[*].vatassessablevalue",
+        "$.data.collection[*].allledgerentries[*].vatassessablevalue.type",
+        "$.data.collection[*].allledgerentries[*].vatassessablevalue.value",
+        "$.data.collection[*].amount",
+        "$.data.collection[*].amount.type",
+        "$.data.collection[*].amount.value",
+        "$.data.collection[*].areserialmaster",
+        "$.data.collection[*].areserialmaster.type",
+        "$.data.collection[*].areserialmaster.value",
+        "$.data.collection[*].asoriginal",
+        "$.data.collection[*].aspayslip",
+        "$.data.collection[*].baseunits",
+        "$.data.collection[*].baseunits.type",
+        "$.data.collection[*].baseunits.value",
+        "$.data.collection[*].date",
+        "$.data.collection[*].date.type",
+        "$.data.collection[*].date.value",
+        "$.data.collection[*].effectivedate",
+        "$.data.collection[*].effectivedate.type",
+        "$.data.collection[*].effectivedate.value",
+        "$.data.collection[*].guid",
+        "$.data.collection[*].isdeemedpositive",
+        "$.data.collection[*].isdeemedpositive.type",
+        "$.data.collection[*].isdeemedpositive.value",
+        "$.data.collection[*].isdeleted",
+        "$.data.collection[*].isdeletedvchretained",
+        "$.data.collection[*].isinvoice",
+        "$.data.collection[*].isnegisposset",
+        "$.data.collection[*].isnegisposset.type",
+        "$.data.collection[*].isnegisposset.value",
+        "$.data.collection[*].languagename",
+        "$.data.collection[*].languagename[*]",
+        "$.data.collection[*].languagename[*].languageid",
+        "$.data.collection[*].languagename[*].languageid.type",
+        "$.data.collection[*].languagename[*].languageid.value",
+        "$.data.collection[*].languagename[*].name",
+        "$.data.collection[*].languagename[*].name[*]",
+        "$.data.collection[*].languagename[*].name[*].metadata",
+        "$.data.collection[*].languagename[*].name[*].type",
+        "$.data.collection[*].ledgerentries",
+        "$.data.collection[*].ledgerentries[*]",
+        "$.data.collection[*].ledgerentries[*].amount",
+        "$.data.collection[*].ledgerentries[*].amount.type",
+        "$.data.collection[*].ledgerentries[*].amount.value",
+        "$.data.collection[*].ledgerentries[*].billallocations",
+        "$.data.collection[*].ledgerentries[*].billallocations[*]",
+        "$.data.collection[*].ledgerentries[*].billallocations[*].amount",
+        "$.data.collection[*].ledgerentries[*].billallocations[*].amount.type",
+        "$.data.collection[*].ledgerentries[*].billallocations[*].amount.value",
+        "$.data.collection[*].ledgerentries[*].isdeemedpositive",
+        "$.data.collection[*].ledgerentries[*].isdeemedpositive.type",
+        "$.data.collection[*].ledgerentries[*].isdeemedpositive.value",
+        "$.data.collection[*].ledgerentries[*].islastdeemedpositive",
+        "$.data.collection[*].ledgerentries[*].islastdeemedpositive.type",
+        "$.data.collection[*].ledgerentries[*].islastdeemedpositive.value",
+        "$.data.collection[*].ledgerentries[*].ledgername",
+        "$.data.collection[*].ledgerentries[*].ledgername.type",
+        "$.data.collection[*].ledgerentries[*].ledgername.value",
+        "$.data.collection[*].mailingname",
+        "$.data.collection[*].mailingname.type",
+        "$.data.collection[*].mailingname.value",
+        "$.data.collection[*].masterid",
+        "$.data.collection[*].masterid.type",
+        "$.data.collection[*].masterid.value",
+        "$.data.collection[*].metadata",
+        "$.data.collection[*].metadata.name",
+        "$.data.collection[*].metadata.objview",
+        "$.data.collection[*].metadata.remoteid",
+        "$.data.collection[*].metadata.reservedname",
+        "$.data.collection[*].metadata.type",
+        "$.data.collection[*].metadata.vchkey",
+        "$.data.collection[*].metadata.vchtype",
+        "$.data.collection[*].name",
+        "$.data.collection[*].name.type",
+        "$.data.collection[*].name.value",
+        "$.data.collection[*].numberingstyle",
+        "$.data.collection[*].openingbalance",
+        "$.data.collection[*].openingbalance.type",
+        "$.data.collection[*].openingbalance.value",
+        "$.data.collection[*].parent",
+        "$.data.collection[*].parent.type",
+        "$.data.collection[*].parent.value",
+        "$.data.collection[*].partyledgername",
+        "$.data.collection[*].partyledgername.type",
+        "$.data.collection[*].partyledgername.value",
+        "$.data.collection[*].persistedview",
+        "$.data.collection[*].reference",
+        "$.data.collection[*].reference.type",
+        "$.data.collection[*].reference.value",
+        "$.data.collection[*].reuseholeid",
+        "$.data.collection[*].reuseholeid.type",
+        "$.data.collection[*].reuseholeid.value",
+        "$.data.collection[*].serialmaster",
+        "$.data.collection[*].serialmaster.type",
+        "$.data.collection[*].serialmaster.value",
+        "$.data.collection[*].voucherkey",
+        "$.data.collection[*].voucherkey.type",
+        "$.data.collection[*].voucherkey.value",
+        "$.data.collection[*].vouchernumber",
+        "$.data.collection[*].vouchernumberseries",
+        "$.data.collection[*].vouchernumberseries.type",
+        "$.data.collection[*].vouchernumberseries.value",
+        "$.data.collection[*].voucherretainkey",
+        "$.data.collection[*].voucherretainkey.type",
+        "$.data.collection[*].voucherretainkey.value",
+        "$.data.collection[*].vouchertypename"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries",
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3706,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 30,
+      "itemPaths": [
+        "$.data.collection[*].allinventoryentries[*]",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*]",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount.value",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername.value",
+        "$.data.collection[*].allinventoryentries[*].actualqty",
+        "$.data.collection[*].allinventoryentries[*].actualqty.type",
+        "$.data.collection[*].allinventoryentries[*].actualqty.value",
+        "$.data.collection[*].allinventoryentries[*].addlamount",
+        "$.data.collection[*].allinventoryentries[*].addlamount.type",
+        "$.data.collection[*].allinventoryentries[*].addlamount.value",
+        "$.data.collection[*].allinventoryentries[*].amount",
+        "$.data.collection[*].allinventoryentries[*].amount.type",
+        "$.data.collection[*].allinventoryentries[*].amount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*]",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber.value",
+        "$.data.collection[*].allinventoryentries[*].billedqty",
+        "$.data.collection[*].allinventoryentries[*].billedqty.type",
+        "$.data.collection[*].allinventoryentries[*].billedqty.value",
+        "$.data.collection[*].allinventoryentries[*].discount",
+        "$.data.collection[*].allinventoryentries[*].discount.type",
+        "$.data.collection[*].allinventoryentries[*].discount.value",
+        "$.data.collection[*].allinventoryentries[*].isdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].isdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].isdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].islastdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].islastdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].islastdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].rate",
+        "$.data.collection[*].allinventoryentries[*].rate.type",
+        "$.data.collection[*].allinventoryentries[*].rate.value",
+        "$.data.collection[*].allinventoryentries[*].stockitemname",
+        "$.data.collection[*].allinventoryentries[*].stockitemname.type",
+        "$.data.collection[*].allinventoryentries[*].stockitemname.value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].accountingallocations",
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 1,
+      "itemPaths": [
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*]",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].amount.value",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].isdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].islastdeemedpositive.value",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername.type",
+        "$.data.collection[*].allinventoryentries[*].accountingallocations[*].ledgername.value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allinventoryentries[*].batchallocations",
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 14199,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 13,
+      "itemPaths": [
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*]",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].actualqty.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].addlamount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].amount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchdiscount.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchname.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].batchrate.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].billedqty.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].indentno.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].orderno.value",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber.type",
+        "$.data.collection[*].allinventoryentries[*].batchallocations[*].trackingnumber.value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries",
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3436,
+      "arrayLengthMin": 2,
+      "arrayLengthMax": 35,
+      "itemPaths": [
+        "$.data.collection[*].allledgerentries[*]",
+        "$.data.collection[*].allledgerentries[*].amount",
+        "$.data.collection[*].allledgerentries[*].amount.type",
+        "$.data.collection[*].allledgerentries[*].amount.value",
+        "$.data.collection[*].allledgerentries[*].billallocations",
+        "$.data.collection[*].allledgerentries[*].billallocations[*]",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].amount",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].amount.type",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].amount.value",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].billtype",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].billtype.type",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].billtype.value",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].tdsdeducteeisspecialrate",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].tdsdeducteespecialrate",
+        "$.data.collection[*].allledgerentries[*].isdeemedpositive",
+        "$.data.collection[*].allledgerentries[*].isdeemedpositive.type",
+        "$.data.collection[*].allledgerentries[*].isdeemedpositive.value",
+        "$.data.collection[*].allledgerentries[*].islastdeemedpositive",
+        "$.data.collection[*].allledgerentries[*].islastdeemedpositive.type",
+        "$.data.collection[*].allledgerentries[*].islastdeemedpositive.value",
+        "$.data.collection[*].allledgerentries[*].ledgername",
+        "$.data.collection[*].allledgerentries[*].ledgername.type",
+        "$.data.collection[*].allledgerentries[*].ledgername.value",
+        "$.data.collection[*].allledgerentries[*].vatassessablevalue",
+        "$.data.collection[*].allledgerentries[*].vatassessablevalue.type",
+        "$.data.collection[*].allledgerentries[*].vatassessablevalue.value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].allledgerentries[*].billallocations",
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3688,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 14,
+      "itemPaths": [
+        "$.data.collection[*].allledgerentries[*].billallocations[*]",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].amount",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].amount.type",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].amount.value",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].billtype",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].billtype.type",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].billtype.value",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].tdsdeducteeisspecialrate",
+        "$.data.collection[*].allledgerentries[*].billallocations[*].tdsdeducteespecialrate"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].languagename",
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6894,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 1,
+      "itemPaths": [
+        "$.data.collection[*].languagename[*]",
+        "$.data.collection[*].languagename[*].languageid",
+        "$.data.collection[*].languagename[*].languageid.type",
+        "$.data.collection[*].languagename[*].languageid.value",
+        "$.data.collection[*].languagename[*].name",
+        "$.data.collection[*].languagename[*].name[*]",
+        "$.data.collection[*].languagename[*].name[*].metadata",
+        "$.data.collection[*].languagename[*].name[*].type"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].languagename[*].name",
+      "files": [
+        "KSNativeCostCategory.json",
+        "KSNativeGodown.json",
+        "KSNativeGroup.json",
+        "KSNativeLedger.json",
+        "KSNativeStockGroup.json",
+        "KSNativeStockItem.json",
+        "KSNativeVoucherType.json"
+      ],
+      "occurrences": 6894,
+      "arrayLengthMin": 2,
+      "arrayLengthMax": 4,
+      "itemPaths": [
+        "$.data.collection[*].languagename[*].name[*]",
+        "$.data.collection[*].languagename[*].name[*].metadata",
+        "$.data.collection[*].languagename[*].name[*].type"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries",
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 3706,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 3,
+      "itemPaths": [
+        "$.data.collection[*].ledgerentries[*]",
+        "$.data.collection[*].ledgerentries[*].amount",
+        "$.data.collection[*].ledgerentries[*].amount.type",
+        "$.data.collection[*].ledgerentries[*].amount.value",
+        "$.data.collection[*].ledgerentries[*].billallocations",
+        "$.data.collection[*].ledgerentries[*].billallocations[*]",
+        "$.data.collection[*].ledgerentries[*].billallocations[*].amount",
+        "$.data.collection[*].ledgerentries[*].billallocations[*].amount.type",
+        "$.data.collection[*].ledgerentries[*].billallocations[*].amount.value",
+        "$.data.collection[*].ledgerentries[*].isdeemedpositive",
+        "$.data.collection[*].ledgerentries[*].isdeemedpositive.type",
+        "$.data.collection[*].ledgerentries[*].isdeemedpositive.value",
+        "$.data.collection[*].ledgerentries[*].islastdeemedpositive",
+        "$.data.collection[*].ledgerentries[*].islastdeemedpositive.type",
+        "$.data.collection[*].ledgerentries[*].islastdeemedpositive.value",
+        "$.data.collection[*].ledgerentries[*].ledgername",
+        "$.data.collection[*].ledgerentries[*].ledgername.type",
+        "$.data.collection[*].ledgerentries[*].ledgername.value"
+      ]
+    },
+    {
+      "path": "$.data.collection[*].ledgerentries[*].billallocations",
+      "files": [
+        "KSNativeVoucher.json"
+      ],
+      "occurrences": 2027,
+      "arrayLengthMin": 1,
+      "arrayLengthMax": 9,
+      "itemPaths": [
+        "$.data.collection[*].ledgerentries[*].billallocations[*]",
+        "$.data.collection[*].ledgerentries[*].billallocations[*].amount",
+        "$.data.collection[*].ledgerentries[*].billallocations[*].amount.type",
+        "$.data.collection[*].ledgerentries[*].billallocations[*].amount.value"
+      ]
+    }
+  ]
+}
