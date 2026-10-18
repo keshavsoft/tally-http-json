@@ -1,0 +1,53 @@
+
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: KSReceiptLegacyJsonTest
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "json"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSReceiptLegacyJsonTest",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            },
+            {
+              "Fetch": "PartyLedgerName"
+            },
+            {
+              "Fetch": "Amount"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

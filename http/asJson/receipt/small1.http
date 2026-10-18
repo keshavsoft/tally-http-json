@@ -1,0 +1,93 @@
+
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Data
+id: KSReceiptReportTest
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svExportInPlainFormat",
+      "value": "Yes"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSReceiptReportTest",
+            "type": "Report",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Form": "KSReceiptReportTest"
+            },
+            {
+              "Plain JSON": "Yes"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptReportTest",
+            "type": "Form",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Part": "KSReceiptReportPart"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptReportPart",
+            "type": "Part",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Line": "KSReceiptReportLine"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptReportLine",
+            "type": "Line",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Field": "KSReceiptReportField"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptReportField",
+            "type": "Field",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Set As": "\"Receipt report test\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
