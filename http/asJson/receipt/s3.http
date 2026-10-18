@@ -1,0 +1,198 @@
+
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Data
+id: KSReceiptReportTest
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    },
+    {
+      "name": "svExportInPlainFormat",
+      "value": "Yes"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSReceiptReportTest",
+            "type": "Report",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Form": "KSReceiptReportForm"
+            },
+            {
+              "Plain JSON": "Yes"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptReportForm",
+            "type": "Form",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Part": "KSReceiptReportPart"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptReportPart",
+            "type": "Part",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Line": "KSReceiptReportLine"
+            },
+            {
+              "Repeat": "KSReceiptReportLine:KSReceiptCollection"
+            },
+            {
+              "Scroll": "Vertical"
+            },
+            {
+              "JSON Tag": "receipts"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptReportLine",
+            "type": "Line",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Fields": "KSReceiptDate,KSReceiptNumber,KSReceiptParty,KSReceiptAmount,KSReceiptEntries"
+            },
+            {
+              "JSON Tag": "receipt"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptDate",
+            "type": "Field",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Use": "Uni Date Field"
+            },
+            {
+              "Set As": "$Date"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptNumber",
+            "type": "Field",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Use": "Name Field"
+            },
+            {
+              "Set As": "$VoucherNumber"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptParty",
+            "type": "Field",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Use": "Name Field"
+            },
+            {
+              "Set As": "$PartyLedgerName"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptAmount",
+            "type": "Field",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Use": "Amount Field"
+            },
+            {
+              "Set As": "$Amount"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptEntries",
+            "type": "Field",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Set As": "$AllLedgerEntries"
+            },
+            {
+              "JSON Tag": "All Ledger Entries"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptCollection",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "ChildOf": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date"
+            },
+            {
+              "Fetch": "VoucherNumber"
+            },
+            {
+              "Fetch": "PartyLedgerName"
+            },
+            {
+              "Fetch": "Amount"
+            },
+            {
+              "Fetch": "AllLedgerEntries"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
