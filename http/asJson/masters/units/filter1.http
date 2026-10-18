@@ -1,0 +1,41 @@
+
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: allLedgers
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "allLedgers",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+              {
+              "Type": "Units"
+            },
+             {
+              "Fetch": "Name"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

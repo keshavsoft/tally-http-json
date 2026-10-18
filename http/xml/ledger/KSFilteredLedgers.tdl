@@ -1,0 +1,8 @@
+
+[Collection : KSFilteredLedgers]
+    Type   : Ledger
+    Filter : KSNameFilter
+    Fetch  : Name
+
+[System : Formula]
+    KSNameFilter : $Name contains "KS JSON"

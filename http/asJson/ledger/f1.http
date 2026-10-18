@@ -1,0 +1,63 @@
+
+POST http://localhost:9000
+Content-Type: application/json
+Version: 1
+Tallyrequest: Export
+Type: Collection
+Id: KSFilteredLedgers
+
+{
+  "static_variables": [
+    {
+      "type": "",
+      "key": "",
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    },
+    {
+      "type": "",
+      "key": "",
+      "name": "svExportFormat",
+      "value": "JSONEx"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "descriptions": [
+        {
+          "metadata": {
+            "name": "KSFilteredLedgers",
+            "type": "Collection"
+          },
+          "attributes": [
+            {
+              "name": "Type",
+              "value": "Ledger"
+            },
+        
+            {
+              "name": "Fetch",
+              "value": "Name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSNameFilter",
+            "type": "System: Formula"
+          },
+          "attributes": [
+            {
+              "name": "Formula",
+              "value": "$Name contains \"KS JSON\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
