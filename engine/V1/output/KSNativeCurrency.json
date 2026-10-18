@@ -1,0 +1,26 @@
+{
+  "status": "1",
+  "data": {
+    "metadata": {
+      "is_mst_dep_type": true,
+      "mst_dep_type": "2048"
+    },
+    "collection": [
+      {
+        "metadata": {
+          "type": "Currency",
+          "name": "?",
+          "reservedname": ""
+        },
+        "name": {
+          "type": "String",
+          "value": "?"
+        },
+        "mailingname": {
+          "type": "String",
+          "value": "Indian Rupees"
+        }
+      }
+    ]
+  }
+}

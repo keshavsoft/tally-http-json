@@ -1,0 +1,32 @@
+POST http://localhost:9000
+Content-Type: text/xml
+
+<ENVELOPE>
+  <HEADER>
+    <VERSION>1</VERSION>
+    <TALLYREQUEST>Export</TALLYREQUEST>
+    <TYPE>Collection</TYPE>
+    <ID>KSUnitMasterSource</ID>
+  </HEADER>
+  <BODY>
+    <DESC>
+      <STATICVARIABLES>
+        <SVCURRENTCOMPANY>mani9</SVCURRENTCOMPANY>
+        <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+      </STATICVARIABLES>
+      <TDL>
+        <TDLMESSAGE>
+          <COLLECTION NAME="KSUnitMasterSource"
+                      ISMODIFY="No">
+            <TYPE>Units</TYPE>
+            <FETCH>Name, FormalName, IsSimpleUnit</FETCH>
+            <FILTER>KSUnitNameFilter</FILTER>
+          </COLLECTION>
+          <SYSTEM TYPE="Formulae">
+            <KSUnitNameFilter>$Name = "Nos"</KSUnitNameFilter>
+          </SYSTEM>
+        </TDLMESSAGE>
+      </TDL>
+    </DESC>
+  </BODY>
+</ENVELOPE>

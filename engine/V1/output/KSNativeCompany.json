@@ -1,0 +1,19 @@
+{
+  "status": "1",
+  "data": {
+    "metadata": {},
+    "collection": [
+      {
+        "metadata": {
+          "type": "Company",
+          "name": "mani9",
+          "reservedname": ""
+        },
+        "name": {
+          "type": "String",
+          "value": "mani9"
+        }
+      }
+    ]
+  }
+}

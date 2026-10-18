@@ -1,0 +1,869 @@
+{
+  "status": "1",
+  "data": {
+    "metadata": {
+      "is_mst_dep_type": true,
+      "mst_dep_type": "1024"
+    },
+    "collection": [
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "0% Purchase",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "0% Purchase"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Attendance",
+          "reservedname": "Attendance"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Attendance"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Bank Payment",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Bank Payment"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Bank Receipt",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Bank Receipt"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "BC Sales",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "BC Sales"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Contra",
+          "reservedname": "Contra"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Contra"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Credit Note",
+          "reservedname": "Credit Note"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Credit Note"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Credit Note/slip",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Credit Note/slip"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Debit Note",
+          "reservedname": "Debit Note"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Debit Note"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Delivery Note",
+          "reservedname": "Delivery Note"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Delivery Note"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Estimate",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Estimate"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Job Work In Order",
+          "reservedname": "Job Work In Order"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Job Work In Order"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Job Work Out Order",
+          "reservedname": "Job Work Out Order"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Job Work Out Order"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Journal",
+          "reservedname": "Journal"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Journal"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Material In",
+          "reservedname": "Material In"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Material In"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Material Out",
+          "reservedname": "Material Out"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Material Out"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Memorandum",
+          "reservedname": "Memorandum"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Memorandum"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Payment",
+          "reservedname": "Payment"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Payment"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Payroll",
+          "reservedname": "Payroll"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Payroll"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Physical Stock",
+          "reservedname": "Physical Stock"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Physical Stock"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Proforma Invoice",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Proforma Invoice"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Purchase",
+          "reservedname": "Purchase"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Purchase"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Purchase Order",
+          "reservedname": "Purchase Order"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Purchase Order"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Pur Exp",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Pur Exp"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Receipt",
+          "reservedname": "Receipt"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Receipt"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Receipt Note",
+          "reservedname": "Receipt Note"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Receipt Note"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Rejections In",
+          "reservedname": "Rejections In"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Rejections In"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Rejections Out",
+          "reservedname": "Rejections Out"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Rejections Out"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Reversing Journal",
+          "reservedname": "Reversing Journal"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Reversing Journal"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Sales",
+          "reservedname": "Sales"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Sales"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Sales/CA",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Sales/CA"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Sales/Cr Mani",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Sales/Cr Mani"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Sales/E",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Sales/E"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Sales/G",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Sales/G"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Sales Order",
+          "reservedname": "Sales Order"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Sales Order"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Sales/slip",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Sales/slip"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Slip Purchase",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Slip Purchase"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Slip Receipt",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Slip Receipt"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Voucher Type",
+          "name": "Stock Journal",
+          "reservedname": "Stock Journal"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Stock Journal"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

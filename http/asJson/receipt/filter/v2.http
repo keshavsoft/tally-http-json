@@ -1,0 +1,46 @@
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: KSReceiptVoucherSource
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSTestVoucherFilter",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Type": "Vouchers:VoucherType"
+            },
+            {
+              "Child Of": "$$VchTypeReceipt"
+            },
+            {
+              "Fetch": "Date, VoucherNumber"
+            },
+            {
+              "Filter": "$$IsEqual:$VoucherNumber:\"1\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

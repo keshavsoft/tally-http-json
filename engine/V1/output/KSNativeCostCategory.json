@@ -1,0 +1,33 @@
+{
+  "status": "1",
+  "data": {
+    "metadata": {
+      "is_mst_dep_type": true,
+      "mst_dep_type": "16"
+    },
+    "collection": [
+      {
+        "metadata": {
+          "type": "Cost Category",
+          "name": "Primary Cost Category",
+          "reservedname": ""
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Primary Cost Category"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1155 @@
+{
+    "metadata": {
+        "type": "Voucher",
+        "remoteid": "56b158ca-11af-4ad5-bc28-c1c2428041b9-0002a859",
+        "vchkey": "56b158ca-11af-4ad5-bc28-c1c2428041b9-0000b420:00000013",
+        "vchtype": "Sales/CA",
+        "objview": "Invoice Voucher View"
+    },
+    "date": {
+        "type": "Date",
+        "value": "20260401"
+    },
+    "guid": "56b158ca-11af-4ad5-bc28-c1c2428041b9-0002a859",
+    "vouchertypename": "Sales/CA",
+    "partyledgername": {
+        "type": "String",
+        "value": "Cash"
+    },
+    "vouchernumber": "1",
+    "reference": {
+        "type": "String",
+        "value": "CA/1"
+    },
+    "serialmaster": {
+        "type": "String",
+        "value": ""
+    },
+    "areserialmaster": {
+        "type": "String",
+        "value": ""
+    },
+    "numberingstyle": "Auto Renumber",
+    "persistedview": "Invoice Voucher View",
+    "isdeleted": false,
+    "asoriginal": false,
+    "isdeemedpositive": {
+        "type": "Logical",
+        "value": true
+    },
+    "isinvoice": true,
+    "aspayslip": false,
+    "isdeletedvchretained": false,
+    "isnegisposset": {
+        "type": "Logical",
+        "value": true
+    },
+    "masterid": {
+        "type": "Number",
+        "value": " 174169"
+    },
+    "voucherkey": {
+        "type": "Number",
+        "value": "198049531953171"
+    },
+    "voucherretainkey": {
+        "type": "Number",
+        "value": "8433"
+    },
+    "reuseholeid": {
+        "type": "Number",
+        "value": "0"
+    },
+    "amount": {
+        "type": "Amount",
+        "value": "-6220.89"
+    },
+    "vouchernumberseries": {
+        "type": "String",
+        "value": "Default"
+    },
+    "allinventoryentries": [
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "Shading Net Kgs"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "280.90/kgs"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "1280.90"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 4.560 kgs"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 4.560 kgs"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "Rishi-Rs.205/-"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "1000.00"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 3.560 kgs"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 3.560 kgs"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "280.90/kgs"
+                    }
+                },
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "Bahnu-Fortune-Rs.178/-"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "280.90"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 1.000 kgs"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 1.000 kgs"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "280.90/kgs"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "1280.90"
+                    }
+                }
+            ]
+        },
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "ROPE"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "312.50/kgs"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "100.00"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 0.320 kgs"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 0.320 kgs"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "Tuf-Rs.170"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "100.00"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 0.320 kgs"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 0.320 kgs"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "312.50/kgs"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "100.00"
+                    }
+                }
+            ]
+        },
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "ROPE"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "259.26/kgs"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "420.00"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 1.620 kgs"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 1.620 kgs"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "Tuf-Rs.170"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "420.00"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 1.620 kgs"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 1.620 kgs"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "259.26/kgs"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "420.00"
+                    }
+                }
+            ]
+        },
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "ROPE"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "250.00/kgs"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "200.00"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 0.800 kgs"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 0.800 kgs"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "Tuf-Rs.170"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "200.00"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 0.800 kgs"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 0.800 kgs"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "250.00/kgs"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "200.00"
+                    }
+                }
+            ]
+        },
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "Nylon Cheeses"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "180.00/Nos"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "1440.00"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 8 Nos"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 8 Nos"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "Kumaran-250gms-Rs.126/-"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "1440.00"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 8 Nos"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 8 Nos"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "180.00/Nos"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "1440.00"
+                    }
+                }
+            ]
+        },
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "0.75/90/50"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "430.46/kgs"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "1299.99"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 3.020 kgs"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 3.020 kgs"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "Tri-Rs.273/-"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "1299.99"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 3.020 kgs"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 3.020 kgs"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "430.46/kgs"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "1299.99"
+                    }
+                }
+            ]
+        },
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "Export Surplus New"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "576.92/kgs"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "300.00"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 0.520 kgs"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 0.520 kgs"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "1.20-275/-"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "300.00"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 0.520 kgs"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 0.520 kgs"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "576.92/kgs"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "300.00"
+                    }
+                }
+            ]
+        },
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "Gloves"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "10.00/Nos"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "100.00"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 10 Nos"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 10 Nos"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "Blue-RRR-Rs.6/-"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "100.00"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 10 Nos"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 10 Nos"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "10.00/Nos"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "100.00"
+                    }
+                }
+            ]
+        },
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "Gloves"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "12.00/Nos"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "240.00"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 20 Nos"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 20 Nos"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "Blue-60gms-RR-Rs.8.50"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "240.00"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 20 Nos"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 20 Nos"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "12.00/Nos"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "240.00"
+                    }
+                }
+            ]
+        },
+        {
+            "stockitemname": {
+                "type": "String",
+                "value": "Anchor Gaff Hooks"
+            },
+            "addlamount": {
+                "type": "Amount",
+                "value": ""
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": false
+            },
+            "rate": {
+                "type": "Rate",
+                "value": "140.00/Nos"
+            },
+            "discount": {
+                "type": "Number",
+                "value": "0"
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "840.00"
+            },
+            "actualqty": {
+                "type": "Quantity",
+                "value": " 6 Nos"
+            },
+            "billedqty": {
+                "type": "Quantity",
+                "value": " 6 Nos"
+            },
+            "batchallocations": [
+                {
+                    "batchname": {
+                        "type": "String",
+                        "value": "8/0-8mm-Rs.85/-"
+                    },
+                    "indentno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "orderno": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "trackingnumber": {
+                        "type": "String",
+                        "value": "\u0004 Not Applicable"
+                    },
+                    "addlamount": {
+                        "type": "Amount",
+                        "value": ""
+                    },
+                    "batchdiscount": {
+                        "type": "Number",
+                        "value": "0"
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "840.00"
+                    },
+                    "actualqty": {
+                        "type": "Quantity",
+                        "value": " 6 Nos"
+                    },
+                    "billedqty": {
+                        "type": "Quantity",
+                        "value": " 6 Nos"
+                    },
+                    "batchrate": {
+                        "type": "Rate",
+                        "value": "140.00/Nos"
+                    }
+                }
+            ],
+            "accountingallocations": [
+                {
+                    "ledgername": {
+                        "type": "String",
+                        "value": "Sales"
+                    },
+                    "isdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "islastdeemedpositive": {
+                        "type": "Logical",
+                        "value": false
+                    },
+                    "amount": {
+                        "type": "Amount",
+                        "value": "840.00"
+                    }
+                }
+            ]
+        }
+    ],
+    "ledgerentries": [
+        {
+            "ledgername": {
+                "type": "String",
+                "value": "Cash"
+            },
+            "isdeemedpositive": {
+                "type": "Logical",
+                "value": true
+            },
+            "islastdeemedpositive": {
+                "type": "Logical",
+                "value": true
+            },
+            "amount": {
+                "type": "Amount",
+                "value": "-6220.89"
+            }
+        }
+    ]
+}

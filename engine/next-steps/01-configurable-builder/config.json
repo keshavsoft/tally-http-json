@@ -1,0 +1,24 @@
+{
+  "id": "KSSelectedReceipts",
+  "objectType": "Vouchers:VoucherType",
+  "childOf": "$$VchTypeReceipt",
+  "fetch": [
+    "Date",
+    "VoucherNumber",
+    "PartyLedgerName",
+    "Amount"
+  ],
+  "walk": {
+    "id": "KSSelectedReceiptLedgerEntries",
+    "collection": "AllLedgerEntries",
+    "fetch": [
+      "LedgerName",
+      "Amount",
+      "IsDeemedPositive"
+    ],
+    "parentFields": [
+      "Date",
+      "VoucherNumber"
+    ]
+  }
+}

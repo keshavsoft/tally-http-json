@@ -1,0 +1,10 @@
+{
+  "status": "1",
+  "data": {
+    "metadata": {
+      "is_mst_dep_type": true,
+      "mst_dep_type": "8192"
+    },
+    "collection": []
+  }
+}

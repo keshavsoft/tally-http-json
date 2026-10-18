@@ -1,0 +1,141 @@
+{
+  "status": "1",
+  "data": {
+    "metadata": {
+      "is_mst_dep_type": true,
+      "mst_dep_type": "64"
+    },
+    "collection": [
+      {
+        "metadata": {
+          "type": "Godown",
+          "name": "Main Location",
+          "reservedname": ""
+        },
+        "parent": {
+          "type": "String",
+          "value": "\u0004 Primary"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Main Location"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Godown",
+          "name": "Nalam Godown",
+          "reservedname": ""
+        },
+        "parent": {
+          "type": "String",
+          "value": "\u0004 Primary"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Nalam Godown"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Godown",
+          "name": "N Chinna Godown",
+          "reservedname": ""
+        },
+        "parent": {
+          "type": "String",
+          "value": "\u0004 Primary"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "N Chinna Godown"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Godown",
+          "name": "P House",
+          "reservedname": ""
+        },
+        "parent": {
+          "type": "String",
+          "value": "\u0004 Primary"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "P House"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "type": "Godown",
+          "name": "Stairs Godown",
+          "reservedname": ""
+        },
+        "parent": {
+          "type": "String",
+          "value": "\u0004 Primary"
+        },
+        "languagename": [
+          {
+            "name": [
+              {
+                "metadata": true,
+                "type": "String"
+              },
+              "Stairs Godown"
+            ],
+            "languageid": {
+              "type": "Number",
+              "value": " 1033"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
