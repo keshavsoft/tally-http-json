@@ -1,0 +1,31 @@
+
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: KSFilteredLedgers
+
+{
+  "transport": {
+    "action": "collection",
+    "collection": "TSPL Ledger Collection",
+    "tdl": {
+      "def": {
+        "Collection": {
+          "TSPL Ledger Collection": {
+            "Type": "Ledger",
+            "Fetch": "Name, ClosingBalance",
+            "Filter": "TSPLDebtorFilter"
+          }
+        },
+        "System": {
+          "Formula": {
+            "IsDebtorBillWise": "($Parent = \"Sundry Debtors\") AND (NOT $IsBillWiseOn)",
+            "TSPLDebtorFilter": "##IsDebtorBillWise"
+          }
+        }
+      }
+    }
+  }
+}

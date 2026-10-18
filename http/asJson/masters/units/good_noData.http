@@ -1,0 +1,48 @@
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: allUnits
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+           {
+          "metadata": {
+            "name": "allUnits",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": {
+            "Type": "Unit",
+            "Fetch": "Name",
+            "Filter": "ExcludeNosFilter"
+          }
+        },
+        {
+          "metadata": {
+            "name": "ExcludeNosFilter",
+            "type": "System: Formula",
+            "ismodify": false
+          },
+          "attributes": {
+            "$": "$Name != \"Kg\""
+          }
+        }
+     
+      ]
+    }
+  ]
+}
