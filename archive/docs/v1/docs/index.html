@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What is TDL, and why do we need it?</title><style>
+:root{color-scheme:light;--ink:#172033;--muted:#586579;--line:#dce3ec;--panel:#f4f7fb;--accent:#185abd;--good:#176b45}
+*{box-sizing:border-box}body{margin:0;background:#f7f9fc;color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:#10243e;color:#fff;padding:34px max(22px,calc((100% - 900px)/2)) 30px}
+header p{color:#d7e3f2;max-width:780px;margin:8px 0 0}main{max-width:900px;margin:26px auto;padding:0 22px 50px}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin:0}h2{font-size:1.35rem;margin:30px 0 8px}h3{font-size:1.05rem;margin:20px 0 6px}
+p{margin:9px 0}ul,ol{padding-left:24px}li{margin:5px 0}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:700;color:#9fc5ff}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:16px 0}
+.note{background:#edf5ff;border-left:4px solid var(--accent);padding:13px 16px;border-radius:5px;margin:16px 0}
+.success{background:#edf8f1;border-left:4px solid var(--good);padding:13px 16px;border-radius:5px;margin:16px 0}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#eef1f6;padding:2px 5px;border-radius:4px;font-size:.93em}
+pre{background:#101827;color:#e8eef8;padding:17px;border-radius:12px;overflow:auto;font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace}
+pre code{background:transparent;padding:0;color:inherit}.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin:18px 0}
+.step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px;text-align:center;font-weight:650}.arrow{color:var(--accent);font-size:1.3rem}
+small,.muted{color:var(--muted)}footer{max-width:900px;margin:0 auto;padding:0 22px 30px;color:var(--muted);font-size:.9rem}
+@media(max-width:620px){.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}header{padding:28px 22px}}
+</style></head><body>
+<header><div class="eyebrow">Tally JSON learning series · Launch pad 01 of 3</div>
+<h1>What is TDL, and why do we need it?</h1><p>Launch pad 1 — the simplest mental model for Tally data retrieval.</p></header><main>
+<div class="card"><h2>The short story</h2>
+<p><strong>TDL means Tally Definition Language.</strong> It is used to describe and customize Tally's data structures, collections, reports, forms, fields, and related behavior.</p>
+<p>Think of Tally as the system that owns the business data. TDL tells Tally <em>what data to gather and how to traverse or present it</em>. An HTTP JSON request is one way to ask Tally to perform that work and return a response.</p></div>
+<div class="flow"><div class="step">Business data<br><small>Vouchers, ledgers, stock</small></div><div class="arrow">→</div><div class="step">TDL definition<br><small>What to collect / walk</small></div><div class="arrow">→</div><div class="step">JSON response<br><small>Data sent to caller</small></div></div>
+<h2>Why do we need TDL?</h2><ul>
+<li><strong>Describe a collection:</strong> for example, Receipt vouchers.</li>
+<li><strong>Choose fields:</strong> for example, Date, VoucherNumber, PartyLedgerName, Amount.</li>
+<li><strong>Traverse nested data:</strong> for example, ledger entries inside each voucher.</li>
+<li><strong>Add computed methods:</strong> for example, attaching a parent voucher number to each walked ledger entry.</li></ul>
+<div class="note"><strong>Keep responsibilities clear.</strong> TDL works inside Tally, where the business objects and relationships exist. JavaScript can consume the response and transform it for an application.</div>
+<h2>Three terms to remember</h2>
+<div class="card"><h3>Object</h3><p>A business record or object, such as one voucher or one ledger.</p></div>
+<div class="card"><h3>Collection</h3><p>A set of objects Tally can retrieve or iterate over, such as Receipt vouchers.</p></div>
+<div class="card"><h3>Method / field</h3><p>A value available on an object, such as <code>Date</code>, <code>VoucherNumber</code>, or <code>Amount</code>. TDL can fetch existing methods or define computed ones.</p></div>
+<h2>What TDL is not</h2><p>TDL is not the JSON itself, and it is not the JavaScript flattening function. JSON is the transport/data representation in our HTTP workflow. TDL defines Tally-side retrieval and traversal; JavaScript handles application-side processing.</p>
+<div class="success"><strong>Remember:</strong> TDL tells Tally what to retrieve and how to traverse it; JavaScript can transform the returned data into the shape our application needs.</div>
+</main>
+<footer>Learning notes for the KeshavSoft Tally HTTP JSON exploration. Examples use the tested setup where stated; experimental behavior is labelled explicitly.</footer>
+</body></html>
