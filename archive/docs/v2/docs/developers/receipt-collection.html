@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Example: a small Receipt collection · Tally HTTP JSON</title>
+<meta name="description" content="Start with a single collection and only the fields needed by the caller.">
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body><header><div class="brand"><a href="../index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Developers guide</div><h1>Example: a small Receipt collection</h1><p>Start with a single collection and only the fields needed by the caller.</p></header>
+<nav aria-label="Main navigation"><a href="../index.html">Home</a> <a href="../users/index.html">Users</a> <a href="../learners/index.html">Learners</a> <a href="index.html">Developers</a> <a href="../advanced/index.html">Advanced</a> <a href="../examples/index.html">Examples</a> <a href="../reference/index.html">Reference</a></nav><main>
+<div class="crumb"><a href="../index.html">Documentation home</a> <span aria-hidden="true">/</span> <a href="index.html">Developers</a></div>
+<div class="layout"><article>
+<p><span class="pill good">Checked-in example</span> This example follows <code>http/asJson/receipt/small.http</code>.</p>
+<pre><code>POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: KSReceiptLegacyJsonTest
+
+{
+  "static_variables": [
+    {"name": "svExportFormat", "value": "json"},
+    {"name": "svCurrentCompany", "value": "mani9"}
+  ],
+  "tdlmessage": [
+    {
+      "definitions": [
+        {
+          "metadata": {
+            "name": "KSReceiptLegacyJsonTest",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {"Type": "Vouchers:VoucherType"},
+            {"ChildOf": "$$VchTypeReceipt"},
+            {"Fetch": "Date"},
+            {"Fetch": "VoucherNumber"},
+            {"Fetch": "PartyLedgerName"},
+            {"Fetch": "Amount"}
+          ]
+        }
+      ]
+    }
+  ]
+}</code></pre>
+<h2>What this demonstrates</h2><ul><li><code>Type</code> selects the voucher object collection.</li><li><code>ChildOf</code> narrows the source to Receipt vouchers.</li><li><code>Fetch</code> lists the methods required by the caller.</li></ul>
+<div class="note">This is the repository's JSON output example. The compact report example described in the project history uses a separate TDL Report definition and JSONEx output. Do not assume their response structures are identical.</div>
+<p class="next"><a href="../index.html">← Documentation home</a><span class="small">Developers</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="../users/index.html">For users</a>
+<a href="../learners/index.html">For learners</a>
+<a href="index.html">For developers</a>
+<a href="../advanced/index.html">Advanced developers</a>
+<a href="../advanced/flattening/index.html">Deep dive: flattening</a>
+<a href="../examples/index.html">Examples</a>
+<a href="../reference/index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>

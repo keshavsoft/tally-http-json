@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Parent context: keep each row traceable · Tally HTTP JSON</title>
+<meta name="description" content="Why parent fields matter when child objects become independent rows.">
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body><header><div class="brand"><a href="../index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Advanced developers guide</div><h1>Parent context: keep each row traceable</h1><p>Why parent fields matter when child objects become independent rows.</p></header>
+<nav aria-label="Main navigation"><a href="../index.html">Home</a> <a href="../users/index.html">Users</a> <a href="../learners/index.html">Learners</a> <a href="../developers/index.html">Developers</a> <a href="index.html">Advanced</a> <a href="../examples/index.html">Examples</a> <a href="../reference/index.html">Reference</a></nav><main>
+<div class="crumb"><a href="../index.html">Documentation home</a> <span aria-hidden="true">/</span> <a href="index.html">Advanced</a></div>
+<div class="layout"><article>
+<h2>The problem</h2><p>A ledger entry might contain a ledger name and an amount but not the voucher number or date. Once moved out of its nested parent array, the entry may lose the context needed to interpret it.</p>
+<h2>The solution</h2><p>Carry selected parent values into each child row. In the current experiment, those values are the voucher number and date.</p>
+<pre><code>{
+  "ParentVoucherNumber": "471",
+  "ParentVoucherDate": "20261017",
+  "LedgerName": "Cash",
+  "Amount": "100.00"
+}</code></pre>
+<h2>Choosing parent fields</h2><ul><li>Choose stable identifiers whenever possible.</li><li>Include descriptive fields only when useful to downstream consumers.</li><li>Be explicit about whether a value comes from the parent or the child.</li><li>Keep original values unless a separate conversion is requested.</li></ul>
+<h2>Do not confuse parent fields with aggregation</h2><p>Repeating a voucher number on each entry does not combine or sum the entries. Aggregation is a separate operation with separate rules.</p>
+<p class="next"><a href="../index.html">← Documentation home</a><span class="small">Advanced developers</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="../users/index.html">For users</a>
+<a href="../learners/index.html">For learners</a>
+<a href="../developers/index.html">For developers</a>
+<a href="index.html">Advanced developers</a>
+<a href="flattening/index.html">Deep dive: flattening</a>
+<a href="../examples/index.html">Examples</a>
+<a href="../reference/index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>

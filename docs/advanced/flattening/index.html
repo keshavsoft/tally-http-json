@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deep dive: flattening nested voucher data · Tally HTTP JSON</title>
+<meta name="description" content="A step-by-step explanation of the parent voucher, nested entries, TDL traversal, and flat output.">
+<link rel="stylesheet" href="../../assets/site.css"></head>
+<body><header><div class="brand"><a href="../../index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Advanced developers guide</div><h1>Deep dive: flattening nested voucher data</h1><p>A step-by-step explanation of the parent voucher, nested entries, TDL traversal, and flat output.</p></header>
+<nav aria-label="Main navigation"><a href="../../index.html">Home</a> <a href="../../users/index.html">Users</a> <a href="../../learners/index.html">Learners</a> <a href="../../developers/index.html">Developers</a> <a href="../index.html">Advanced</a> <a href="../../examples/index.html">Examples</a> <a href="../../reference/index.html">Reference</a></nav><main>
+<div class="crumb"><a href="../../index.html">Documentation home</a> <span aria-hidden="true">/</span> <a href="../index.html">Advanced</a></div>
+<div class="layout"><article>
+<div class="panel"><h2>The goal</h2><p>We want one row per ledger entry, while retaining the voucher date and number so that each row remains traceable to its parent voucher.</p></div>
+<h2>Step 1 — start with the business shape</h2><p>A Receipt voucher contains header-level values and a collection of ledger entries. The header values belong to the voucher; each entry has its own ledger name, amount, and flags.</p>
+<pre><code>Voucher 471
+  Date: 20261017
+  AllLedgerEntries:
+    - LedgerName: Cash
+      Amount: 100.00
+    - LedgerName: Customer A
+      Amount: -100.00</code></pre>
+<h2>Step 2 — express the relationship in JSON</h2><p>The following is a simplified teaching example, not a verbatim Tally response:</p>
+<pre><code>[
+  {
+    "Date": "20261017",
+    "VoucherNumber": "471",
+    "AllLedgerEntries": [
+      {"LedgerName": "Cash", "Amount": "100.00"},
+      {"LedgerName": "Customer A", "Amount": "-100.00"}
+    ]
+  }
+]</code></pre>
+<h2>Step 3 — what does flatten mean here?</h2><p>Instead of one voucher object containing an array, produce one output object per entry. Copy the parent voucher's date and number into every child row, then retain the child fields.</p>
+<pre><code>[
+  {
+    "ParentVoucherNumber": "471",
+    "ParentVoucherDate": "20261017",
+    "LedgerName": "Cash",
+    "Amount": "100.00"
+  },
+  {
+    "ParentVoucherNumber": "471",
+    "ParentVoucherDate": "20261017",
+    "LedgerName": "Customer A",
+    "Amount": "-100.00"
+  }
+]</code></pre>
+<div class="note">This output is illustrative and simplified. Tally's JSONEx response may wrap fields with <code>type</code> and <code>value</code>, and may include additional metadata.</div>
+<h2>Step 4 — identify the collection traversal</h2><p>In the tested TDL definition:</p><ul><li><code>Source Collection</code> points to the Receipt-voucher source.</li><li><code>Walk: AllLedgerEntries</code> traverses the child ledger-entry collection.</li><li><code>Source Fetch: Date,VoucherNumber</code> makes the source voucher values available during traversal.</li><li><code>Fetch</code> requests child methods such as <code>LedgerName</code>, <code>Amount</code>, and <code>IsDeemedPositive</code>.</li><li><code>Compute</code> defines the parent-number and parent-date methods on the resulting rows.</li></ul>
+<h2>Step 5 — check the actual response</h2><p>The observed result included <code>parentvouchernumber</code> and <code>parentvoucherdate</code>. For the screenshot's example, the values were <code>471</code> and <code>20261017</code>. This was the confirmation that the parent context could be exposed alongside each ledger-entry row in the tested setup.</p>
+<h2>Step 6 — why the parent values must be repeated</h2><p>After flattening, the original parent-child nesting is no longer the primary structure. Repeating the parent's identifying values on each row preserves traceability. Without them, an entry such as <code>Cash / 100.00</code> could be hard to associate with its source voucher.</p>
+<h2>Step 7 — understand the row count</h2><p>Flattening is one row per child entry, not one row per voucher. A voucher with two ledger entries produces two rows. A voucher with several entries produces several rows. This can make the flattened output larger than a header-only voucher list, even though the structure is easier to analyze.</p>
+<h2>Step 8 — where JavaScript can help</h2><p>A JavaScript utility can perform a similar transformation on already-returned JSON. It could accept data, a path to the nested array, and a definition of which parent fields to retain. The exact contract should be designed before implementation.</p>
+<div class="success"><strong>Core takeaway:</strong> flattening changes the shape of the data, not the underlying business relationship. Parent values travel with each child so the relationship remains understandable.</div>
+<div class="next"><a href="before-after.html">Next: before-and-after worked example →</a><a href="../walk-vs-js.html">TDL Walk vs JavaScript →</a></div>
+<p class="next"><a href="../../index.html">← Documentation home</a><span class="small">Advanced developers</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="../../users/index.html">For users</a>
+<a href="../../learners/index.html">For learners</a>
+<a href="../../developers/index.html">For developers</a>
+<a href="../index.html">Advanced developers</a>
+<a href="index.html">Deep dive: flattening</a>
+<a href="../../examples/index.html">Examples</a>
+<a href="../../reference/index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>

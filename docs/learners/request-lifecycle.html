@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Request lifecycle: from HTTP to JSON · Tally HTTP JSON</title>
+<meta name="description" content="Follow the request in the same order Tally receives and processes it.">
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body><header><div class="brand"><a href="../index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Learners guide</div><h1>Request lifecycle: from HTTP to JSON</h1><p>Follow the request in the same order Tally receives and processes it.</p></header>
+<nav aria-label="Main navigation"><a href="../index.html">Home</a> <a href="../users/index.html">Users</a> <a href="index.html">Learners</a> <a href="../developers/index.html">Developers</a> <a href="../advanced/index.html">Advanced</a> <a href="../examples/index.html">Examples</a> <a href="../reference/index.html">Reference</a></nav><main>
+<div class="crumb"><a href="../index.html">Documentation home</a> <span aria-hidden="true">/</span> <a href="index.html">Learners</a></div>
+<div class="layout"><article>
+<ol><li><strong>HTTP request:</strong> send a POST to the Tally HTTP endpoint.</li><li><strong>Request headers:</strong> select the operation, export type, and requested identifier.</li><li><strong>Static variables:</strong> set values such as export format and current company.</li><li><strong>TDL definitions:</strong> define a collection or report when the request needs a custom data shape.</li><li><strong>Collection evaluation:</strong> Tally selects objects, fetches methods, and may walk nested collections.</li><li><strong>Serialization:</strong> Tally returns the result in the selected output format.</li><li><strong>Application processing:</strong> JavaScript or another caller validates and transforms the response.</li></ol>
+<h2>Envelope example</h2><pre><code>POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Export
+type: Collection
+id: KSReceiptLedgerEntryProbe</code></pre>
+<p>The request header and body have different jobs. The headers identify the operation. The JSON body supplies settings and definitions used by that operation.</p>
+<p class="next"><a href="../index.html">← Documentation home</a><span class="small">Learners</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="../users/index.html">For users</a>
+<a href="index.html">For learners</a>
+<a href="../developers/index.html">For developers</a>
+<a href="../advanced/index.html">Advanced developers</a>
+<a href="../advanced/flattening/index.html">Deep dive: flattening</a>
+<a href="../examples/index.html">Examples</a>
+<a href="../reference/index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>

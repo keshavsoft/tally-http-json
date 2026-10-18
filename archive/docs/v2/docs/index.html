@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tally HTTP JSON — Documentation · Tally HTTP JSON</title>
+<meta name="description" content="A practical guide to Tally data retrieval, TDL collections, JSON responses, and flattening nested records.">
+<link rel="stylesheet" href="assets/site.css"></head>
+<body><header><div class="brand"><a href="index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Home guide</div><h1>Tally HTTP JSON — Documentation</h1><p>A practical guide to Tally data retrieval, TDL collections, JSON responses, and flattening nested records.</p></header>
+<nav aria-label="Main navigation"><a href="index.html">Home</a> <a href="users/index.html">Users</a> <a href="learners/index.html">Learners</a> <a href="developers/index.html">Developers</a> <a href="advanced/index.html">Advanced</a> <a href="examples/index.html">Examples</a> <a href="reference/index.html">Reference</a></nav><main>
+<div class="crumb"></div>
+<div class="layout"><article>
+<div class="panel"><h2>Start with the purpose</h2><p>This documentation explains how this project communicates with Tally, how TDL describes the data to retrieve, and how nested data such as voucher ledger entries can be flattened into useful rows.</p><p>The goal is to build shared understanding first, then make the JavaScript API declarative and easy to use.</p></div>
+<div class="flow"><div class="step">Tally data<br><span class="small">Business objects</span></div><div class="arrow">→</div><div class="step">TDL + HTTP<br><span class="small">Retrieve / traverse</span></div><div class="arrow">→</div><div class="step">JSON + JavaScript<br><span class="small">Consume / transform</span></div></div>
+<h2>Choose your path</h2>
+<div class="card-grid">
+<a class="card" href="users/index.html"><h3>For users</h3><p>What the project does, setup assumptions, and how to read the results.</p></a>
+<a class="card" href="learners/index.html"><h3>For learners</h3><p>Learn TDL, objects, collections, fields, and the request lifecycle.</p></a>
+<a class="card" href="developers/index.html"><h3>For developers</h3><p>Understand request definitions, working examples, and the code organization.</p></a>
+<a class="card" href="advanced/index.html"><h3>For advanced developers</h3><p>Deep dive into flattening, parent context, paths, and design decisions.</p></a>
+<a class="card" href="reference/index.html"><h3>Reference</h3><p>Concise explanations of attributes, response shapes, glossary, and troubleshooting.</p></a>
+<a class="card" href="examples/index.html"><h3>Examples</h3><p>Use the checked-in HTTP requests as concrete, inspectable examples.</p></a>
+</div>
+<h2>The central example: Receipt vouchers</h2><p>We use Receipt vouchers because they make the relationship easy to see: a voucher is the parent object, and <code>AllLedgerEntries</code> contains child ledger-entry objects. Our working collection traverses those entries and exposes parent voucher number and date on each resulting row.</p>
+<div class="success"><strong>Documentation principle:</strong> examples are labelled as tested, illustrative, or conceptual. An illustrative JSON shape is not presented as a literal Tally response.</div>
+<p class="next"><a href="index.html">← Documentation home</a><span class="small">Home</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="users/index.html">For users</a>
+<a href="learners/index.html">For learners</a>
+<a href="developers/index.html">For developers</a>
+<a href="advanced/index.html">Advanced developers</a>
+<a href="advanced/flattening/index.html">Deep dive: flattening</a>
+<a href="examples/index.html">Examples</a>
+<a href="reference/index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>

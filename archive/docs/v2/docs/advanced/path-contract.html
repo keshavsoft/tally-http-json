@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Designing a path-based JavaScript flatten API · Tally HTTP JSON</title>
+<meta name="description" content="Decisions to make before implementing a reusable flattening function.">
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body><header><div class="brand"><a href="../index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Advanced developers guide</div><h1>Designing a path-based JavaScript flatten API</h1><p>Decisions to make before implementing a reusable flattening function.</p></header>
+<nav aria-label="Main navigation"><a href="../index.html">Home</a> <a href="../users/index.html">Users</a> <a href="../learners/index.html">Learners</a> <a href="../developers/index.html">Developers</a> <a href="index.html">Advanced</a> <a href="../examples/index.html">Examples</a> <a href="../reference/index.html">Reference</a></nav><main>
+<div class="crumb"><a href="../index.html">Documentation home</a> <span aria-hidden="true">/</span> <a href="index.html">Advanced</a></div>
+<div class="layout"><article>
+<h2>Proposed conceptual call</h2><pre><code>flattenByPath(data, {
+  path: "AllLedgerEntries",
+  parentFields: ["Date", "VoucherNumber"],
+  prefixParentFields: true
+});</code></pre>
+<p>This is a design sketch, not an implemented API or an agreed final contract.</p>
+<h2>Questions the contract must answer</h2><ol><li><strong>Input root:</strong> can the input be an object, an array, or both?</li><li><strong>Path meaning:</strong> is the path relative to each parent record or absolute from the root?</li><li><strong>Nested path syntax:</strong> how will deeper paths be represented?</li><li><strong>Parent field selection:</strong> which fields should be copied to each child row?</li><li><strong>Collision behavior:</strong> what if the child already has a field named <code>Date</code>?</li><li><strong>Missing path:</strong> return an empty array, preserve the original record, or raise a descriptive error?</li><li><strong>Multiple levels:</strong> does one call flatten one collection or multiple nested levels?</li><li><strong>Immutability:</strong> should the function avoid mutating the input? Prefer yes.</li><li><strong>Value preservation:</strong> should JSONEx wrappers remain intact or be unwrapped? Keep this separate unless explicitly required.</li></ol>
+<h2>Suggested first version boundary</h2><p>Start with one nested array path and explicitly selected parent fields. Do not add arbitrary mapping, filtering, aggregation, renaming, or recursive flattening until the basic behavior is tested.</p>
+<div class="success"><strong>Design principle:</strong> make the caller's intent visible in the configuration. A reader should be able to tell which collection is flattened and which parent values are carried into each output row.</div>
+<p class="next"><a href="../index.html">← Documentation home</a><span class="small">Advanced developers</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="../users/index.html">For users</a>
+<a href="../learners/index.html">For learners</a>
+<a href="../developers/index.html">For developers</a>
+<a href="index.html">Advanced developers</a>
+<a href="flattening/index.html">Deep dive: flattening</a>
+<a href="../examples/index.html">Examples</a>
+<a href="../reference/index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>

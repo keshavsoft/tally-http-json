@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TDL Walk versus JavaScript flattening · Tally HTTP JSON</title>
+<meta name="description" content="Two operations can produce flat rows, but they run at different stages.">
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body><header><div class="brand"><a href="../index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Advanced developers guide</div><h1>TDL Walk versus JavaScript flattening</h1><p>Two operations can produce flat rows, but they run at different stages.</p></header>
+<nav aria-label="Main navigation"><a href="../index.html">Home</a> <a href="../users/index.html">Users</a> <a href="../learners/index.html">Learners</a> <a href="../developers/index.html">Developers</a> <a href="index.html">Advanced</a> <a href="../examples/index.html">Examples</a> <a href="../reference/index.html">Reference</a></nav><main>
+<div class="crumb"><a href="../index.html">Documentation home</a> <span aria-hidden="true">/</span> <a href="index.html">Advanced</a></div>
+<div class="layout"><article>
+<table><thead><tr><th>Question</th><th>TDL <code>Walk</code></th><th>JavaScript flattening</th></tr></thead><tbody>
+<tr><td>Where does it run?</td><td>Inside Tally while evaluating the collection definition.</td><td>In the application after JSON has been returned.</td></tr>
+<tr><td>What does it traverse?</td><td>Tally's collection/object hierarchy.</td><td>Arrays and objects in the returned JSON value.</td></tr>
+<tr><td>Can it access Tally methods directly?</td><td>Yes, according to the current object context and TDL definition.</td><td>No. It can only use values present in the JSON it receives.</td></tr>
+<tr><td>How is parent context retained?</td><td>Use the appropriate source fields and computed methods in the TDL collection.</td><td>Copy selected parent properties into each child output row.</td></tr>
+<tr><td>Best role in this design</td><td>Expose the necessary data and traverse Tally's nested structures.</td><td>Provide reusable, configurable reshaping for application needs.</td></tr>
+</tbody></table>
+<h2>Why keep both ideas separate?</h2><p>If Tally can expose parent and child values directly in a useful flat collection, that can reduce the amount of nesting sent over HTTP. A generic JavaScript function is still useful when the input is already nested, when different paths are needed, or when a caller wants a different output shape.</p>
+<div class="note">The JavaScript function should not assume it can reconstruct omitted parent values. If the input JSON does not contain the required parent information, the function needs another source or must report that the information is unavailable.</div>
+<p class="next"><a href="../index.html">← Documentation home</a><span class="small">Advanced developers</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="../users/index.html">For users</a>
+<a href="../learners/index.html">For learners</a>
+<a href="../developers/index.html">For developers</a>
+<a href="index.html">Advanced developers</a>
+<a href="flattening/index.html">Deep dive: flattening</a>
+<a href="../examples/index.html">Examples</a>
+<a href="../reference/index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>

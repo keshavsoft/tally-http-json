@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flattening: a worked before-and-after example · Tally HTTP JSON</title>
+<meta name="description" content="Use one voucher with two ledger entries to see exactly what changes.">
+<link rel="stylesheet" href="../../assets/site.css"></head>
+<body><header><div class="brand"><a href="../../index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Advanced developers guide</div><h1>Flattening: a worked before-and-after example</h1><p>Use one voucher with two ledger entries to see exactly what changes.</p></header>
+<nav aria-label="Main navigation"><a href="../../index.html">Home</a> <a href="../../users/index.html">Users</a> <a href="../../learners/index.html">Learners</a> <a href="../../developers/index.html">Developers</a> <a href="../index.html">Advanced</a> <a href="../../examples/index.html">Examples</a> <a href="../../reference/index.html">Reference</a></nav><main>
+<div class="crumb"><a href="../../index.html">Documentation home</a> <span aria-hidden="true">/</span> <a href="../index.html">Advanced</a></div>
+<div class="layout"><article>
+<h2>Input: nested voucher data</h2><pre><code>[
+  {
+    "Date": "20261017",
+    "VoucherNumber": "471",
+    "VoucherTypeName": "Receipt",
+    "AllLedgerEntries": [
+      {
+        "LedgerName": "Cash",
+        "IsDeemedPositive": false,
+        "Amount": "100.00"
+      },
+      {
+        "LedgerName": "Customer A",
+        "IsDeemedPositive": true,
+        "Amount": "-100.00"
+      }
+    ]
+  }
+]</code></pre>
+<p>One array item represents one voucher. Inside it is an array of two ledger entries.</p>
+<h2>Operation: flatten <code>AllLedgerEntries</code></h2><ol><li>Read the parent voucher's <code>Date</code> and <code>VoucherNumber</code>.</li><li>Visit each object in <code>AllLedgerEntries</code>.</li><li>Make one output row for each child object.</li><li>Copy the parent date and number into each row.</li><li>Copy the chosen child fields into that row.</li></ol>
+<h2>Output: flat ledger-entry rows</h2><pre><code>[
+  {
+    "ParentVoucherNumber": "471",
+    "ParentVoucherDate": "20261017",
+    "LedgerName": "Cash",
+    "IsDeemedPositive": false,
+    "Amount": "100.00"
+  },
+  {
+    "ParentVoucherNumber": "471",
+    "ParentVoucherDate": "20261017",
+    "LedgerName": "Customer A",
+    "IsDeemedPositive": true,
+    "Amount": "-100.00"
+  }
+]</code></pre>
+<h2>What changed?</h2><table><thead><tr><th>Aspect</th><th>Before</th><th>After</th></tr></thead><tbody><tr><td>Top-level rows</td><td>One voucher</td><td>Two ledger-entry rows</td></tr><tr><td>Entry location</td><td>Nested in <code>AllLedgerEntries</code></td><td>Each entry is a top-level row</td></tr><tr><td>Parent identity</td><td>Stored once on voucher</td><td>Repeated on every child row</td></tr><tr><td>Entry fields</td><td>Inside each child object</td><td>Kept on corresponding row</td></tr></tbody></table>
+<div class="caution"><strong>Not a data correction:</strong> flattening should not silently change amount signs, dates, or business meaning. It reorganizes structure. Any renaming or value conversion should be a separate, explicit transformation.</div>
+<h2>Multiple vouchers</h2><p>If there are three vouchers with two, three, and one ledger entries, respectively, the flattened output contains six rows. Every row should retain the correct parent identity for its own voucher.</p>
+<p class="next"><a href="../../index.html">← Documentation home</a><span class="small">Advanced developers</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="../../users/index.html">For users</a>
+<a href="../../learners/index.html">For learners</a>
+<a href="../../developers/index.html">For developers</a>
+<a href="../index.html">Advanced developers</a>
+<a href="index.html">Deep dive: flattening</a>
+<a href="../../examples/index.html">Examples</a>
+<a href="../../reference/index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>

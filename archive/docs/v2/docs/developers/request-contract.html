@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HTTP JSON request contract · Tally HTTP JSON</title>
+<meta name="description" content="Understand which parts of a request identify the operation and which parts define data retrieval.">
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body><header><div class="brand"><a href="../index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Developers guide</div><h1>HTTP JSON request contract</h1><p>Understand which parts of a request identify the operation and which parts define data retrieval.</p></header>
+<nav aria-label="Main navigation"><a href="../index.html">Home</a> <a href="../users/index.html">Users</a> <a href="../learners/index.html">Learners</a> <a href="index.html">Developers</a> <a href="../advanced/index.html">Advanced</a> <a href="../examples/index.html">Examples</a> <a href="../reference/index.html">Reference</a></nav><main>
+<div class="crumb"><a href="../index.html">Documentation home</a> <span aria-hidden="true">/</span> <a href="index.html">Developers</a></div>
+<div class="layout"><article>
+<h2>Headers</h2><table><thead><tr><th>Header</th><th>Role in the examples</th></tr></thead><tbody><tr><td><code>Content-Type</code></td><td>Declares a JSON request body.</td></tr><tr><td><code>version</code></td><td>Request protocol version used by this setup.</td></tr><tr><td><code>tallyrequest</code></td><td>Chooses an operation such as <code>Export</code> or <code>Import</code>.</td></tr><tr><td><code>type</code></td><td>Chooses the export target kind, such as <code>Collection</code> or <code>Data</code>.</td></tr><tr><td><code>id</code></td><td>Names the collection/report/data target requested.</td></tr></tbody></table>
+<h2>Static variables</h2><pre><code>"static_variables": [
+  {"name": "svExportFormat", "value": "jsonex"},
+  {"name": "svCurrentCompany", "value": "mani9"}
+]</code></pre><p>These values are environment-specific. They are not the collection definition itself.</p>
+<h2>TDL definitions</h2><p>A custom collection definition is supplied in the <code>tdlmessage</code> structure. In the checked-in example, each definition contains <code>metadata</code> and <code>attributes</code>. A source collection can be defined separately and referenced by the collection that walks it.</p>
+<h2>Keep concerns separate</h2><ul><li>HTTP headers: operation envelope.</li><li>Static variables: runtime settings.</li><li>TDL: retrieval and traversal rules.</li><li>Response JSON: serialized result.</li><li>JavaScript: post-processing and application contract.</li></ul>
+<p class="next"><a href="../index.html">← Documentation home</a><span class="small">Developers</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="../users/index.html">For users</a>
+<a href="../learners/index.html">For learners</a>
+<a href="index.html">For developers</a>
+<a href="../advanced/index.html">Advanced developers</a>
+<a href="../advanced/flattening/index.html">Deep dive: flattening</a>
+<a href="../examples/index.html">Examples</a>
+<a href="../reference/index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>

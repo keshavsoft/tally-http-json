@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TDL attributes used in these examples · Tally HTTP JSON</title>
+<meta name="description" content="A practical, intentionally concise reference for the attributes visible in this repository.">
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body><header><div class="brand"><a href="../index.html">KeshavSoft · Tally HTTP JSON</a></div>
+<div class="eyebrow">Reference guide</div><h1>TDL attributes used in these examples</h1><p>A practical, intentionally concise reference for the attributes visible in this repository.</p></header>
+<nav aria-label="Main navigation"><a href="../index.html">Home</a> <a href="../users/index.html">Users</a> <a href="../learners/index.html">Learners</a> <a href="../developers/index.html">Developers</a> <a href="../advanced/index.html">Advanced</a> <a href="../examples/index.html">Examples</a> <a href="index.html">Reference</a></nav><main>
+<div class="crumb"><a href="../index.html">Documentation home</a> <span aria-hidden="true">/</span> <a href="index.html">Reference</a></div>
+<div class="layout"><article>
+<table><thead><tr><th>Attribute</th><th>Purpose in the example</th><th>Reminder</th></tr></thead><tbody>
+<tr><td><code>Type</code></td><td>Selects the type of objects in a collection.</td><td>Example: <code>Vouchers:VoucherType</code>.</td></tr>
+<tr><td><code>ChildOf</code></td><td>Restricts a collection to children of a specified object/type.</td><td>Example: <code>$$VchTypeReceipt</code>.</td></tr>
+<tr><td><code>Fetch</code></td><td>Requests methods to be included in the collection output.</td><td>Use the exact methods required.</td></tr>
+<tr><td><code>Source Collection</code></td><td>Identifies the source collection used by another collection.</td><td>The referenced source definition must be present or otherwise available.</td></tr>
+<tr><td><code>Walk</code></td><td>Traverses a nested collection for each source object.</td><td>Example: <code>AllLedgerEntries</code>.</td></tr>
+<tr><td><code>Source Fetch</code></td><td>Requests source-object methods for the walk context.</td><td>Used here for voucher Date and VoucherNumber.</td></tr>
+<tr><td><code>Compute</code></td><td>Defines a computed method using an expression.</td><td>Example: <code>ParentVoucherNumber: $VoucherNumber</code>.</td></tr>
+</tbody></table>
+<div class="caution">This page is an explanatory reference based on the checked-in examples. For exact formal syntax, edge cases, and release-specific support, consult Tally's official TDL documentation.</div>
+<p class="next"><a href="../index.html">← Documentation home</a><span class="small">Reference</span></p></article>
+<aside class="toc"><strong>Documentation map</strong>
+<a href="../users/index.html">For users</a>
+<a href="../learners/index.html">For learners</a>
+<a href="../developers/index.html">For developers</a>
+<a href="../advanced/index.html">Advanced developers</a>
+<a href="../advanced/flattening/index.html">Deep dive: flattening</a>
+<a href="../examples/index.html">Examples</a>
+<a href="index.html">Reference</a>
+</aside></div></main><footer>Lightweight documentation · No JavaScript framework or external CSS dependency</footer></body></html>
