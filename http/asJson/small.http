@@ -3,25 +3,43 @@ Content-Type: application/json
 version: 1
 tallyrequest: Export
 type: Collection
-id: KSReceiptDateTest
+id: Receipts
 
 {
   "static_variables": [
     {
       "name": "svExportFormat",
       "value": "jsonex"
-    },
-    {
-      "name": "svCurrentCompany",
-      "value": "mani9"
     }
   ],
+  "fetch_list": [],
   "tdlmessage": [
     {
       "definitions": [
         {
           "metadata": {
-            "name": "KSReceiptDateTest",
+            "name": "Receipts",
+            "type": "Collection",
+            "ismodify": false
+          },
+          "attributes": [
+            {
+              "Source Collection": "KSReceiptVoucherSource"
+            },
+            {
+              "Walk": "AllLedgerEntries"
+            },
+            {
+              "By": "Date: $..Date"
+            },
+            {
+              "By": "VoucherNumber: $..VoucherNumber"
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "KSReceiptVoucherSource",
             "type": "Collection",
             "ismodify": false
           },

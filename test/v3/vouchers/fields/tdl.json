@@ -1,0 +1,42 @@
+[
+    {
+        "definitions": [
+            {
+                "metadata": {
+                    "name": "Receipts",
+                    "type": "Collection",
+                    "ismodify": false
+                },
+                "attributes": [
+                    {
+                        "Source Collection": "KSReceiptVoucherSource"
+                    },
+                    {
+                        "Source Fetch": "Date,VoucherNumber"
+                    }
+                ]
+            },
+            {
+                "metadata": {
+                    "name": "KSReceiptVoucherSource",
+                    "type": "Collection",
+                    "ismodify": false
+                },
+                "attributes": [
+                    {
+                        "Type": "Vouchers:VoucherType"
+                    },
+                    {
+                        "ChildOf": "$$VchTypeReceipt"
+                    },
+                    {
+                        "Fetch": "Date"
+                    },
+                    {
+                        "Fetch": "VoucherNumber"
+                    }
+                ]
+            }
+        ]
+    }
+]

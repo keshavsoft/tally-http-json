@@ -1,0 +1,40 @@
+;; 1. Source collection: voucher objects
+
+[Collection: KeshavVouchers]
+    Type  : Vouchers
+    Fetch : VoucherNumber, Date
+
+
+;; 2. Report
+
+[Report: KeshavVoucherReport]
+    Form : KeshavVoucherForm
+
+
+;; 3. Form
+
+[Form: KeshavVoucherForm]
+    Parts : KeshavVoucherPart
+
+
+;; 4. Repeat the report line for each voucher
+
+[Part: KeshavVoucherPart]
+    Lines  : KeshavVoucherLine
+    Repeat : KeshavVoucherLine : KeshavVouchers
+
+
+;; 5. Define only the two output fields
+
+[Line: KeshavVoucherLine]
+    Fields : KeshavVoucherNumber, KeshavVoucherDate
+
+
+[Field: KeshavVoucherNumber]
+    Set As   : $VoucherNumber
+    XML Tag  : VoucherNumber
+
+
+[Field: KeshavVoucherDate]
+    Set As   : $Date
+    XML Tag  : Date

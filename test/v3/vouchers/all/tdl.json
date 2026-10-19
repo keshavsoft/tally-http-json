@@ -1,0 +1,24 @@
+[
+    {
+        "definitions": [
+            {
+                "metadata": {
+                    "name": "Receipts",
+                    "type": "Collection",
+                    "ismodify": false
+                },
+                "attributes": [
+                    {
+                        "Type": "Vouchers"
+                    },
+                    {
+                        "Fetch": "Date"
+                    },
+                    {
+                        "Fetch": "VoucherNumber"
+                    }
+                ]
+            }
+        ]
+    }
+]

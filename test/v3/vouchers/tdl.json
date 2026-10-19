@@ -1,0 +1,60 @@
+[
+    {
+        "definitions": [
+            {
+                "metadata": {
+                    "name": "Receipts",
+                    "type": "Collection",
+                    "ismodify": false
+                },
+                "attributes": [
+                    {
+                        "Source Collection": "KSReceiptVoucherSource"
+                    },
+                    {
+                        "Walk": "AllLedgerEntries"
+                    },
+                    {
+                        "Source Fetch": "Date,VoucherNumber"
+                    },
+                    {
+                        "Fetch": "LedgerName"
+                    },
+                    {
+                        "Fetch": "Amount"
+                    },
+                    {
+                        "Fetch": "IsDeemedPositive"
+                    },
+                    {
+                        "Compute": "ParentVoucherNumber: $VoucherNumber"
+                    },
+                    {
+                        "Compute": "ParentVoucherDate: $Date"
+                    }
+                ]
+            },
+            {
+                "metadata": {
+                    "name": "KSReceiptVoucherSource",
+                    "type": "Collection",
+                    "ismodify": false
+                },
+                "attributes": [
+                    {
+                        "Type": "Vouchers:VoucherType"
+                    },
+                    {
+                        "ChildOf": "$$VchTypeReceipt"
+                    },
+                    {
+                        "Fetch": "Date"
+                    },
+                    {
+                        "Fetch": "VoucherNumber"
+                    }
+                ]
+            }
+        ]
+    }
+]
