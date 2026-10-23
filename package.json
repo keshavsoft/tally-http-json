@@ -1,6 +1,6 @@
 {
   "name": "tally-http-json",
-  "version": "1.4.1",
+  "version": "1.5.1",
   "description": "Tally HTTP JSON client for TallyPrime",
   "type": "module",
   "main": "./src/index.js",
