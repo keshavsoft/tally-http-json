@@ -1,0 +1,30 @@
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Import
+type: Data
+id: All Masters
+
+{
+  "static_variables": [
+    {
+      "name": "svMstImportFormat",
+      "value": "JSONEx"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tallymessage": [
+    {
+      "metadata": {
+        "type": "Ledger",
+        "action": "create",
+        "name": "aaaaa"
+      },
+      "name": "aaaaaaa",
+      "parent": "Sundry Debtors"
+    }
+  ]
+}
