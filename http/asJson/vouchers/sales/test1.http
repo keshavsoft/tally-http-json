@@ -57,25 +57,25 @@ id: Vouchers
             "partygstin": "874132483748344",
             "placeofsupply": "Karnataka",
             "vouchertypename": "Sales",
-            "partyname": "Sales",
+            "partyname": "aa2",
             "gstregistration": {
                 "value": "Karnataka Registration",
                 "taxtype": "GST",
                 "taxregistration": ""
             },
-            "partyledgername": "Sales",
+            "partyledgername": "aa2",
             "vouchernumber": "9",
-            "basicbuyername": "Sales",
+            "basicbuyername": "aa2",
             "cmpgstregistrationtype": "Regular",
-            "partymailingname": "Sales",
+            "partymailingname": "aa2",
             "partypincode": "456009",
             "consigneegstin": "874132483748344",
-            "consigneemailingname": "Sales",
+            "consigneemailingname": "aa2",
             "consigneepincode": "456009",
             "consigneestatename": "Karnataka",
             "cmpgststate": "Karnataka",
             "consigneecountryname": "India",
-            "basicbasepartyname": "Sales",
+            "basicbasepartyname": "aa2",
             "numberingstyle": "Auto Retain",
             "cstformissuetype": "\u0004 Not Applicable",
             "cstformrecvtype": "\u0004 Not Applicable",
@@ -219,7 +219,7 @@ id: Vouchers
             "vouchernumberseries": "Default",
             "allinventoryentries": [
                 {
-                    "stockitemname": "aa2",
+                    "stockitemname": "as1",
                     "gstovrdnisrevchargeappl": "\u0004 Not Applicable",
                     "gstovrdntypeofsupply": "Goods",
                     "gstrateinferapplicability": "As per Masters/Company",
@@ -253,45 +253,20 @@ id: Vouchers
                             "billedqty": " 100 nos"
                         }
                     ],
-                    "accountingallocations": [
-                        {
-                            "oldauditentryids": [
-                                {
-                                    "metadata": true,
-                                    "type": "Number"
-                                },
-                                "-1"
-                            ],
-                            "ledgername": "Sales",
-                            "gstclass": "\u0004 Not Applicable",
-                            "isdeemedpositive": false,
-                            "ledgerfromitem": false,
-                            "removezeroentries": false,
-                            "ispartyledger": false,
-                            "gstoverridden": false,
-                            "isgstassessablevalueoverridden": false,
-                            "strdisgstapplicable": false,
-                            "strdgstispartyledger": false,
-                            "strdgstisdutyledger": false,
-                            "contentnegispos": false,
-                            "islastdeemedpositive": false,
-                            "iscapvattaxaltered": false,
-                            "iscapvatnotclaimed": false,
-                            "amount": "21300.00",
-                            "categoryallocations": [
-                                {
-                                    "category": "Primary Cost Category",
-                                    "isdeemedpositive": false,
-                                    "costcentreallocations": [
-                                        {
-                                            "name": "CostName",
-                                            "amount": "21300.00"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
+                  "accountingallocations": [
+ {
+  "ledgername": "aa2",
+  "isdeemedpositive": false,
+  "ispartyledger": true,
+  "amount": "21300.00"
+},
+  {
+  "ledgername": "Sales",
+  "isdeemedpositive": true,
+  "ispartyledger": true,
+  "amount": "-21300.00"
+}
+],
                     "ratedetails": [
                         {
                             "gstratedutyhead": "CGST"
