@@ -37,13 +37,12 @@ id: Vouchers
         {
           "ledgername": "Sales",
           "isdeemedpositive": false,
-          "ispartyledger": false,
           "amount": "100.00"
         }
       ],
       "inventoryentries": [
         {
-          "stockitemname": "YOUR STOCK ITEM",
+          "stockitemname": "as2",
           "billedqty": "2 Nos",
           "rate": "50.00/Nos",
           "amount": "100.00",
