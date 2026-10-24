@@ -253,20 +253,13 @@ id: Vouchers
                             "billedqty": " 100 nos"
                         }
                     ],
-                  "accountingallocations": [
- {
-  "ledgername": "aa2",
-  "isdeemedpositive": false,
-  "ispartyledger": true,
-  "amount": "21300.00"
-},
-  {
-  "ledgername": "Sales",
-  "isdeemedpositive": true,
-  "ispartyledger": true,
-  "amount": "-21300.00"
-}
-],
+                    "accountingallocations": [
+                        {
+                            "ledgername": "Sales",
+                            "isdeemedpositive": false,
+                            "amount": "21300.00"
+                        }
+                    ],
                     "ratedetails": [
                         {
                             "gstratedutyhead": "CGST"
@@ -288,37 +281,10 @@ id: Vouchers
             ],
             "ledgerentries": [
                 {
-                    "oldauditentryids": [
-                        {
-                            "metadata": true,
-                            "type": "Number"
-                        },
-                        "-1"
-                    ],
-                    "ledgername": "Sales",
-                    "gstclass": "\u0004 Not Applicable",
-                    "isdeemedpositive": true,
-                    "ledgerfromitem": false,
-                    "removezeroentries": false,
+                    "ledgername": "aa2",
+                    "isdeemedpositive": false,
                     "ispartyledger": true,
-                    "gstoverridden": false,
-                    "isgstassessablevalueoverridden": false,
-                    "strdisgstapplicable": false,
-                    "strdgstispartyledger": false,
-                    "strdgstisdutyledger": false,
-                    "contentnegispos": false,
-                    "islastdeemedpositive": true,
-                    "iscapvattaxaltered": false,
-                    "iscapvatnotclaimed": false,
-                    "amount": "-21300.00",
-                    "billallocations": [
-                        {
-                            "name": "1",
-                            "billtype": "New Ref",
-                            "tdsdeducteeisspecialrate": false,
-                            "amount": "-21300.00"
-                        }
-                    ]
+                    "amount": "21300.00"
                 }
             ],
             "gst": [
