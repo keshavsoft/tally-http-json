@@ -26,10 +26,10 @@ id: Vouchers
       },
       "date": "20261024",
       "vouchertypename": "Sales",
-      "partyledgername": "aa2",
+      "partyledgername": "Cash",
       "ledgerentries": [
         {
-          "ledgername": "aa2",
+          "ledgername": "Cash",
           "isdeemedpositive": true,
           "ispartyledger": true,
           "amount": "-100.00"
