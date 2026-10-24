@@ -1,0 +1,31 @@
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Import
+type: Data
+id: All Masters
+
+{
+  "static_variables": [
+    {
+      "name": "svMstImportFormat",
+      "value": "JSONEx"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tallymessage": [
+    {
+      "metadata": {
+        "type": "Stock Item",
+        "action": "create",
+        "name": "KS Test Stock Item"
+      },
+      "name": "KS Test Stock Item",
+      "parent": "Primary",
+      "baseunits": "Nos"
+    }
+  ]
+}

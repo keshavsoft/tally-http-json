@@ -21,9 +21,9 @@ id: All Masters
       "metadata": {
         "type": "Ledger",
         "action": "create",
-        "name": "KS JSON Test Ledger V2"
+        "name": "aa3"
       },
-      "name": "KS JSON Test Ledger V2",
+      "name": "aa3",
       "parent": "Sundry Debtors"
     }
   ]

@@ -1,0 +1,61 @@
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Import
+type: Data
+id: Vouchers
+
+{
+  "static_variables": [
+    {
+      "name": "svVchImportFormat",
+      "value": "jsonex"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+  "tallymessage": [
+    {
+      "metadata": {
+        "type": "Voucher",
+        "vchtype": "Sales",
+        "action": "Create",
+        "objview": "Invoice Voucher View"
+      },
+      "date": "20261024",
+      "vouchertypename": "Sales",
+      "partyledgername": "aa2",
+      "ledgerentries": [
+        {
+          "ledgername": "aa2",
+          "isdeemedpositive": true,
+          "ispartyledger": true,
+          "amount": "-100.00"
+        },
+        {
+          "ledgername": "Sales",
+          "isdeemedpositive": false,
+          "ispartyledger": false,
+          "amount": "100.00"
+        }
+      ],
+      "inventoryentries": [
+        {
+          "stockitemname": "YOUR STOCK ITEM",
+          "billedqty": "2 Nos",
+          "rate": "50.00/Nos",
+          "amount": "100.00",
+          "accountingallocations": [
+            {
+              "ledgername": "Sales",
+              "isdeemedpositive": false,
+              "amount": "100.00"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

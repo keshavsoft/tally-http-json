@@ -24,7 +24,7 @@ id: Vouchers
         "action": "Create",
         "objview": "Accounting Voucher View"
       },
-      "date": "20261023",
+      "date": "20261024",
       "vouchertypename": "Receipt",
       "ledgerentries": [
         {

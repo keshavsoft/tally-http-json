@@ -1,0 +1,105 @@
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Import
+type: Data
+id: All Masters
+
+{
+     "static_variables": [
+        {
+            "name": "svMstImportFormat",
+            "value": "jsonex"
+        },
+    {
+            "name": "svCurrentCompany",
+            "value": "mani9"
+        }
+    ],
+    "tallymessage": [
+        {
+            "metadata": {
+                "type": "Stock Item",
+                "name": "as1",
+                "reservedname": ""
+            },
+            "parent": "\u0004 Primary",
+            "gstapplicable": "\u0004 Applicable",
+            "tax classification name": "\u0004 Not Applicable",
+            "gsttypeofsupply": "Goods",
+            "exciseapplicability": "\u0004 Applicable",
+            "vatapplicable": "\u0004 Applicable",
+            "costing method": "Avg. Cost",
+            "valuation method": "Avg. Price",
+            "base units": "Nos",
+            "opening balance": " 100 Nos",
+            "opening value": "-20000.00",
+            "opening rate": "200.00/Nos",
+            "gstdetails": [
+                {
+                    "applicablefrom": "20250401",
+                    "src of gst details": "As per Company/Stock Group",
+                    "gstcalcslabonmrp": false,
+                    "isreversechargeapplicable": false,
+                    "isnongstgoods": false,
+                    "gstineligibleitc": true,
+                    "includeexpforslabcalc": false,
+                    "statewisedetails": [
+                        {
+                            "statename": "\u0004 Any",
+                            "ratedetails": [
+                                {
+                                    "gstratedutyhead": "CGST",
+                                    "gstratevaluationtype": "Based on Value"
+                                },
+                                {
+                                    "gstratedutyhead": "SGST/UTGST",
+                                    "gstratevaluationtype": "Based on Value"
+                                },
+                                {
+                                    "gstratedutyhead": "IGST",
+                                    "gstratevaluationtype": "Based on Value"
+                                },
+                                {
+                                    "gstratedutyhead": "Cess",
+                                    "gstratevaluationtype": "\u0004 Not Applicable"
+                                },
+                                {
+                                    "gstratedutyhead": "State Cess",
+                                    "gstratevaluationtype": "Based on Value"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "hsndetails": [
+                {
+                    "applicablefrom": "20250401",
+                    "src of hsn details": "As per Company/Stock Group"
+                }
+            ],
+            "language name": [
+                {
+                    "name": [
+                        {
+                            "metadata": true,
+                            "type": "String"
+                        },
+                        "as1"
+                    ],
+                    "language id": " 1033"
+                }
+            ],
+            "batch allocations": [
+                {
+                    "godown name": "Main Location",
+                    "batch name": "Batch1",
+                    "opening balance": " 100 Nos",
+                    "opening value": "-20000.00",
+                    "opening rate": "200.00/Nos"
+                }
+            ]
+        }
+    ]
+}

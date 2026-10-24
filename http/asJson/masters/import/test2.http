@@ -1,0 +1,578 @@
+POST http://localhost:9000
+Content-Type: application/json
+version: 1
+tallyrequest: Import
+type: Data
+id: All Masters
+
+{
+    "static_variables": [
+        {
+            "name": "svMstImportFormat",
+            "value": "JSONEx"
+        },
+        {
+            "name": "svCurrentCompany",
+            "value": "mani9"
+        }
+    ],
+    "tallymessage": [
+        {
+            "metadata": {
+                "type": "Stock Item",
+                "name": "as2",
+                "reservedname": ""
+            },
+            "oldauditentryids": [
+                {
+                    "metadata": true,
+                    "type": "Number"
+                },
+                "-1"
+            ],
+            "parent": "FISHING HOOKS",
+            "category": "\u0004 Not Applicable",
+            "gstapplicable": "\u0004 Applicable",
+            "taxclassificationname": "\u0004 Not Applicable",
+            "costingmethod": "Avg. Cost",
+            "valuationmethod": "Avg. Price",
+            "baseunits": "Nos",
+            "additionalunits": "\u0004 Not Applicable",
+            "exciseitemclassification": "\u0004 Not Applicable",
+            "iscostcentreson": false,
+            "isbatchwiseon": true,
+            "isperishableon": false,
+            "isentrytaxapplicable": false,
+            "iscosttrackingon": false,
+            "isupdatingtargetid": false,
+            "isdeleted": false,
+            "issecurityonwhenentered": false,
+            "asoriginal": true,
+            "israteinclusivevat": false,
+            "ignorephysicaldifference": false,
+            "ignorenegativestock": false,
+            "treatsalesasmanufactured": false,
+            "treatpurchasesasconsumed": false,
+            "treatrejectsasscrap": false,
+            "hasmfgdate": false,
+            "allowuseofexpireditems": false,
+            "ignorebatches": false,
+            "ignoregodowns": false,
+            "adjdiffinfirstsaleledger": false,
+            "adjdiffinfirstpurcledger": false,
+            "calconmrp": false,
+            "excludejrnlforvaluation": false,
+            "ismrpincloftax": false,
+            "isaddltaxexempt": false,
+            "issupplementrydutyon": false,
+            "gvatisexciseappl": false,
+            "isadditionaltax": false,
+            "iscessexempted": false,
+            "reorderashigher": false,
+            "minorderashigher": false,
+            "isexcisecalculateonmrp": false,
+            "inclusivetax": false,
+            "gstcalcslabonmrp": false,
+            "modifymrprate": false,
+            "denominator": " 1",
+            "rateofvat": "0",
+            "openingbalance": " 401014 Nos",
+            "openingvalue": "-606417.05",
+            "openingrate": "1.85/Nos",
+            "languagename": [
+                {
+                    "name": [
+                        {
+                            "metadata": true,
+                            "type": "String"
+                        },
+                        "as2"
+                    ],
+                    "languageid": " 1033"
+                }
+            ],
+            "batchallocations": [
+                {
+                    "godownname": "Main Location",
+                    "batchname": "Triple-3/0-Rs.10.40",
+                    "openingbalance": " 2603 Nos",
+                    "openingvalue": "-27325.04",
+                    "openingrate": "10.50/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "Triple-2/0-Rs.9.20",
+                    "openingbalance": " 2161 Nos",
+                    "openingvalue": "-19881.20",
+                    "openingrate": "9.20/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "6-Rs.2027/-",
+                    "openingbalance": " 14174 Nos",
+                    "openingvalue": "-38144.08",
+                    "openingrate": "2.69/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "12-Rs436/-",
+                    "openingbalance": " 9191 Nos",
+                    "openingvalue": "-5105.97",
+                    "openingrate": "0.56/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "14-Rs.336/-",
+                    "openingbalance": " 45600 Nos",
+                    "openingvalue": "-20296.10",
+                    "openingrate": "0.45/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "3-Rs.6843/-",
+                    "openingbalance": " 4786 Nos",
+                    "openingvalue": "-40892.49",
+                    "openingrate": "8.54/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "2-Rs.9862/-",
+                    "openingbalance": " 446 Nos",
+                    "openingvalue": "-5191.71",
+                    "openingrate": "11.64/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "1/2 0-Rs.10.98",
+                    "openingbalance": " 664 Nos",
+                    "openingvalue": "-7289.06",
+                    "openingrate": "10.98/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "00-Rs.8.85",
+                    "openingbalance": " 1232 Nos",
+                    "openingvalue": "-9373.02",
+                    "openingrate": "7.61/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "Triple-4/0-Rs.15.60",
+                    "openingbalance": " 347 Nos",
+                    "openingvalue": "-7004.01",
+                    "openingrate": "20.18/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "10-Rs.623/-",
+                    "openingbalance": " 44698 Nos",
+                    "openingvalue": "-35850.92",
+                    "openingrate": "0.80/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "1-Rs.12.85",
+                    "openingbalance": " 666 Nos",
+                    "openingvalue": "-10119.54",
+                    "openingrate": "15.19/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "7-Rs.1400/- (1.40)",
+                    "openingbalance": " 41023 Nos",
+                    "openingvalue": "-81779.76",
+                    "openingrate": "1.99/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "8-Rs.1060/- (1.06)",
+                    "openingbalance": " 55562 Nos",
+                    "openingvalue": "-79399.21",
+                    "openingrate": "1.43/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "9-Rs.742/- (0.75)",
+                    "openingbalance": " 69648 Nos",
+                    "openingvalue": "-69700.93",
+                    "openingrate": "1.00/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "1/0-Rs.14973/-",
+                    "openingbalance": " 133 Nos",
+                    "openingvalue": "-2935.19",
+                    "openingrate": "22.07/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "11-Rs.440/-",
+                    "openingbalance": " 9172 Nos",
+                    "openingvalue": "-6820.21",
+                    "openingrate": "0.74/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "13-Rs.370/-",
+                    "openingbalance": " 5102 Nos",
+                    "openingvalue": "-2394.78",
+                    "openingrate": "0.47/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "15-Rs.311/-",
+                    "openingbalance": " 18174 Nos",
+                    "openingvalue": "-7368.47",
+                    "openingrate": "0.41/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "16-Rs.315/-",
+                    "openingbalance": " 15257 Nos",
+                    "openingvalue": "-6267.88",
+                    "openingrate": "0.41/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "17-Rs.315/-",
+                    "openingbalance": " 8906 Nos",
+                    "openingvalue": "-2761.31",
+                    "openingrate": "0.31/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "18-Rs.315/-",
+                    "openingbalance": " 16759 Nos",
+                    "openingvalue": "-5619.96",
+                    "openingrate": "0.34/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "19-Rs.315/-",
+                    "openingbalance": " 13748 Nos",
+                    "openingvalue": "-4837.65",
+                    "openingrate": "0.35/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "20-Rs.315/-",
+                    "openingbalance": " 4945 Nos",
+                    "openingvalue": "-1610.04",
+                    "openingrate": "0.33/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "4-Rs.4960/-",
+                    "openingbalance": " 5051 Nos",
+                    "openingvalue": "-30721.60",
+                    "openingrate": "6.08/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "5-Rs.3518/-",
+                    "openingbalance": " 9420 Nos",
+                    "openingvalue": "-40080.97",
+                    "openingrate": "4.25/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "2/0-Rs.28/-",
+                    "openingbalance": " 63 Nos",
+                    "openingvalue": "-1831.50",
+                    "openingrate": "29.07/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "Trpile-4/0-Rs.25/-",
+                    "openingbalance": " 1483 Nos",
+                    "openingvalue": "-35814.45",
+                    "openingrate": "24.15/Nos"
+                }
+            ]
+        }
+    ]
+}
+ "static_variables": [
+    {
+      "name": "svMstImportFormat",
+      "value": "JSONEx"
+    },
+    {
+      "name": "svCurrentCompany",
+      "value": "mani9"
+    }
+  ],
+    {
+            "metadata": {
+                "type": "Stock Item",
+                "name": "as1",
+                "reservedname": ""
+            },
+            "oldauditentryids": [
+                {
+                    "metadata": true,
+                    "type": "Number"
+                },
+                "-1"
+            ],
+            "parent": "FISHING HOOKS",
+            "category": "\u0004 Not Applicable",
+            "gstapplicable": "\u0004 Applicable",
+            "taxclassificationname": "\u0004 Not Applicable",
+            "costingmethod": "Avg. Cost",
+            "valuationmethod": "Avg. Price",
+            "baseunits": "Nos",
+            "additionalunits": "\u0004 Not Applicable",
+            "exciseitemclassification": "\u0004 Not Applicable",
+            "iscostcentreson": false,
+            "isbatchwiseon": true,
+            "isperishableon": false,
+            "isentrytaxapplicable": false,
+            "iscosttrackingon": false,
+            "isupdatingtargetid": false,
+            "isdeleted": false,
+            "issecurityonwhenentered": false,
+            "asoriginal": true,
+            "israteinclusivevat": false,
+            "ignorephysicaldifference": false,
+            "ignorenegativestock": false,
+            "treatsalesasmanufactured": false,
+            "treatpurchasesasconsumed": false,
+            "treatrejectsasscrap": false,
+            "hasmfgdate": false,
+            "allowuseofexpireditems": false,
+            "ignorebatches": false,
+            "ignoregodowns": false,
+            "adjdiffinfirstsaleledger": false,
+            "adjdiffinfirstpurcledger": false,
+            "calconmrp": false,
+            "excludejrnlforvaluation": false,
+            "ismrpincloftax": false,
+            "isaddltaxexempt": false,
+            "issupplementrydutyon": false,
+            "gvatisexciseappl": false,
+            "isadditionaltax": false,
+            "iscessexempted": false,
+            "reorderashigher": false,
+            "minorderashigher": false,
+            "isexcisecalculateonmrp": false,
+            "inclusivetax": false,
+            "gstcalcslabonmrp": false,
+            "modifymrprate": false,
+            "denominator": " 1",
+            "rateofvat": "0",
+            "openingbalance": " 401014 Nos",
+            "openingvalue": "-606417.05",
+            "openingrate": "1.85/Nos",
+            "languagename": [
+                {
+                    "name": [
+                        {
+                            "metadata": true,
+                            "type": "String"
+                        },
+                        "as1"
+                    ],
+                    "languageid": " 1033"
+                }
+            ],
+            "batchallocations": [
+                {
+                    "godownname": "Main Location",
+                    "batchname": "Triple-3/0-Rs.10.40",
+                    "openingbalance": " 2603 Nos",
+                    "openingvalue": "-27325.04",
+                    "openingrate": "10.50/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "Triple-2/0-Rs.9.20",
+                    "openingbalance": " 2161 Nos",
+                    "openingvalue": "-19881.20",
+                    "openingrate": "9.20/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "6-Rs.2027/-",
+                    "openingbalance": " 14174 Nos",
+                    "openingvalue": "-38144.08",
+                    "openingrate": "2.69/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "12-Rs436/-",
+                    "openingbalance": " 9191 Nos",
+                    "openingvalue": "-5105.97",
+                    "openingrate": "0.56/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "14-Rs.336/-",
+                    "openingbalance": " 45600 Nos",
+                    "openingvalue": "-20296.10",
+                    "openingrate": "0.45/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "3-Rs.6843/-",
+                    "openingbalance": " 4786 Nos",
+                    "openingvalue": "-40892.49",
+                    "openingrate": "8.54/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "2-Rs.9862/-",
+                    "openingbalance": " 446 Nos",
+                    "openingvalue": "-5191.71",
+                    "openingrate": "11.64/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "1/2 0-Rs.10.98",
+                    "openingbalance": " 664 Nos",
+                    "openingvalue": "-7289.06",
+                    "openingrate": "10.98/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "00-Rs.8.85",
+                    "openingbalance": " 1232 Nos",
+                    "openingvalue": "-9373.02",
+                    "openingrate": "7.61/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "Triple-4/0-Rs.15.60",
+                    "openingbalance": " 347 Nos",
+                    "openingvalue": "-7004.01",
+                    "openingrate": "20.18/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "10-Rs.623/-",
+                    "openingbalance": " 44698 Nos",
+                    "openingvalue": "-35850.92",
+                    "openingrate": "0.80/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "1-Rs.12.85",
+                    "openingbalance": " 666 Nos",
+                    "openingvalue": "-10119.54",
+                    "openingrate": "15.19/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "7-Rs.1400/- (1.40)",
+                    "openingbalance": " 41023 Nos",
+                    "openingvalue": "-81779.76",
+                    "openingrate": "1.99/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "8-Rs.1060/- (1.06)",
+                    "openingbalance": " 55562 Nos",
+                    "openingvalue": "-79399.21",
+                    "openingrate": "1.43/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "9-Rs.742/- (0.75)",
+                    "openingbalance": " 69648 Nos",
+                    "openingvalue": "-69700.93",
+                    "openingrate": "1.00/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "1/0-Rs.14973/-",
+                    "openingbalance": " 133 Nos",
+                    "openingvalue": "-2935.19",
+                    "openingrate": "22.07/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "11-Rs.440/-",
+                    "openingbalance": " 9172 Nos",
+                    "openingvalue": "-6820.21",
+                    "openingrate": "0.74/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "13-Rs.370/-",
+                    "openingbalance": " 5102 Nos",
+                    "openingvalue": "-2394.78",
+                    "openingrate": "0.47/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "15-Rs.311/-",
+                    "openingbalance": " 18174 Nos",
+                    "openingvalue": "-7368.47",
+                    "openingrate": "0.41/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "16-Rs.315/-",
+                    "openingbalance": " 15257 Nos",
+                    "openingvalue": "-6267.88",
+                    "openingrate": "0.41/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "17-Rs.315/-",
+                    "openingbalance": " 8906 Nos",
+                    "openingvalue": "-2761.31",
+                    "openingrate": "0.31/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "18-Rs.315/-",
+                    "openingbalance": " 16759 Nos",
+                    "openingvalue": "-5619.96",
+                    "openingrate": "0.34/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "19-Rs.315/-",
+                    "openingbalance": " 13748 Nos",
+                    "openingvalue": "-4837.65",
+                    "openingrate": "0.35/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "20-Rs.315/-",
+                    "openingbalance": " 4945 Nos",
+                    "openingvalue": "-1610.04",
+                    "openingrate": "0.33/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "4-Rs.4960/-",
+                    "openingbalance": " 5051 Nos",
+                    "openingvalue": "-30721.60",
+                    "openingrate": "6.08/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "5-Rs.3518/-",
+                    "openingbalance": " 9420 Nos",
+                    "openingvalue": "-40080.97",
+                    "openingrate": "4.25/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "2/0-Rs.28/-",
+                    "openingbalance": " 63 Nos",
+                    "openingvalue": "-1831.50",
+                    "openingrate": "29.07/Nos"
+                },
+                {
+                    "godownname": "Main Location",
+                    "batchname": "Trpile-4/0-Rs.25/-",
+                    "openingbalance": " 1483 Nos",
+                    "openingvalue": "-35814.45",
+                    "openingrate": "24.15/Nos"
+                }
+            ]
+        }
+        }
